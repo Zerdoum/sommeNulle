@@ -69,6 +69,16 @@ def getConstant(constant, rang, listValues):
 
             elif int(rang) == 3:
                 return davenPort3(listValues)
+            elif int(rang) == 4:
+                return davenPort4(listValues)
+            elif int(rang) == 5:
+                return davenPort5(listValues)
+            elif int(rang) == 6:
+                return davenPort6(listValues)
+            elif int(rang) == 7:
+                return davenPort7(listValues)
+            elif int(rang) == 8:
+                return davenPort8(listValues)
             else:
                 return "Not yet implemented"
 
