@@ -3,8 +3,15 @@ from math import gcd as bltin_gcd
 def davenPort1(listValues):
     return listValues[0]
 
-def davenPort2(lisValues):
-    return compute_constant(lisValues)
+def davenPort2(listValues):
+    x = int(listValues[0])
+    y = int(listValues[1])
+    if (checkListIsValid(listValues)):
+        return compute_constant(listValues)
+    elif (bltin_gcd(x,y) == 1):
+        return x * y
+    else:
+        print("This is not a valid case")
 
 def davenPort3(lisValues):
     x = int(lisValues[0])
@@ -49,7 +56,22 @@ def decompose_number(number=0):
         i +=1
     return list
 
+# Check whether elements in list are divisable by the first element in the list
+def checkListIsValid(listValues):
+    counter = 1
+    for element in listValues:
+        if counter >= 1:
+            if not isValidElement(int(listValues[counter - 1]), int(listValues[counter])):
+                return False
+
+    return True
 
 
-
+def isValidElement(x, y):
+    print("arrived here to check")
+    if ((y % x == 0) & (y >= x)):
+        print("this is values x y:" + str(x) + ' ' + str(y))
+        return True
+    else:
+        return False
 
