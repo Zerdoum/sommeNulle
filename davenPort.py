@@ -63,9 +63,7 @@ def checkListIsValid(listValues):
         if counter >= 1:
             if not isValidElement(int(listValues[counter - 1]), int(listValues[counter])):
                 return False
-
     return True
-
 
 def isValidElement(x, y):
     print("arrived here to check")
