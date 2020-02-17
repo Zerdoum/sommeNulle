@@ -21,8 +21,7 @@ class SearchForm(FlaskForm):
     constant = SelectField('Constant', choices=[('0','DavenPort'),('1','Harborth')], validators=[DataRequired()])
     range = IntegerField('Range', validators=[DataRequired()])
     group = StringField('Group', validators=[DataRequired()])
-    submit = SubmitField('Next')
-
+    submit = SubmitField('Calculer')
 
 class SearchOneForm(FlaskForm):
     constant = ''

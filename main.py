@@ -1,22 +1,32 @@
-from flask import Flask, render_template, url_for, flash, redirect
+# -*- coding: utf-8 -*-
+from flask import Flask, render_template, url_for, flash, redirect,request
 from forms import RegistrationForm, LoginForm, SearchForm, SearchOneForm
 from core import getConstant
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'eivai9rie4aepai9eele6Iedaec6siew'
 
 posts = [
     {
-        'author': 'Hanane Zerdoum',
-        'title': 'Blog Post 1',
+        'title': 'DavenPort',
         'content': 'First post content',
-        'date_posted': '01 Nouvembre 2019'
     },
     {
-        'author': 'Hanane Zerdoum',
-        'title': 'Blog Post 2',
+        'title': 'Harborth',
         'content': 'Second post content',
-        'date_posted': '01 Nouvembre 2019'
+    },
+    {
+        'title': 'Erdos-Ginzburgviv',
+        'content': 'Second post content',
+    },
+    {
+        'title': 'Olson',
+        'content': 'Second post content',
+    },
+    {
+        'title': 'Others',
+        'content': 'Second post content',
     }
 
 ]
@@ -24,7 +34,8 @@ posts = [
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html', posts=posts)
+    form = SearchForm()
+    return render_template('home.html', posts=posts, form=form)
 
 @app.route("/about")
 def about():
@@ -50,15 +61,23 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 @app.route("/search", methods=('GET', 'POST'))
-def search():
+@app.route("/search/<constant>/<range>/<group>", methods=('GET','POST'))
+@app.route("/search/<constant>/<range>/<group>/<result>", methods=('GET','POST'))
+def search(constant='', range='', group='', result=''):
     form = SearchForm()
     if form.validate_on_submit():
-            return redirect(url_for('searchOne', constant=form.constant.data, range=form.range.data, group=form.group.data ))
-    return render_template('search.html', title='Search', form=form)
+        return redirect(url_for('searchOne', constant=form.constant.data, range=form.range.data, group=form.group.data))
+    return render_template('search.html', title='Search', form=form, constant=constant, range=range, group=group, result=result)
 
 @app.route('/searchOne/<constant>/<range>/<group>')
 def searchOne(constant, range, group):
     form = SearchOneForm()
     listValues = group.split(",")
     result = getConstant(constant, range, listValues)
-    return render_template('searchOne.html', title='Search_one', result=result)
+    return redirect(url_for('search', constant=constant, range=range, group=group, result=result))
+
+@app.route("/description", methods=('GET', 'POST'))
+def description():
+    form = SearchForm()
+    type = request.args.get('type')
+    return render_template('description.html', title='Description', form=form, type=type)

@@ -1,0 +1,396 @@
+\documentclass[12pt, openany]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{hyperref}
+\usepackage{pslatex}
+\usepackage{lmodern}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{wrapfig}
+\usepackage[pdftex]{graphicx}
+\usepackage{color}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{colortbl}
+\usepackage[]{xcolor}   
+\usepackage{enumitem} %Personaliser les symboles des items
+\usepackage{pifont} % Pour plus de symboles pour les items 
+
+\renewcommand\familydefault{lmss} % Joli police 
+
+%************************************
+
+ 
+
+%Pour les caractères spéciaux 
+\def \Z {\mathbb{Z}}
+\def \Zq {\mathbb{Z}_q^*}
+\def \G {\mathbb{G}}
+\def \C {\mathbb{C}}
+\def \E {\mathbb{E}}
+\def \F {\mathbb{F}}
+\def \N {\mathbb{N}}
+\def \R {\mathbb{R}}
+\def \Q {\mathbb{Q}}
+\def \A {\mathcal{A}}
+\def \M {\mathcal{M}}
+\def \p {\mathcal{P}}
+\def \K {\mathbb{K}}
+\def \np {\mathcal{NP}}
+\def \O {\mathcal{O}}
+\def \D {\mathcal{D}}
+%\def \C {\mathcal{C}}
+\def \Pr {\mathcal{P}}
+\def \Ve {\mathcal{V}}
+%\def \g {\mathcal{g}}
+\def \I {\{0,1\}}
+
+
+%*******************************************
+
+ %\addbibresource{sample.bib} %Imports bibliography file
+
+
+\begin{document}
+
+\section {La constante de Davenport}
+
+
+Soit $G$ un groupe abélien fini noté additivement. La constante de Davenport notée $D(G)$ est définie comme le plus petit entier $t$ tel que toutes suites $S$ de $G$ de longueur supérieur ou égale à $t$ contienne une sous-suite de somme nulle.
+
+Le problème de déterminer la valeur exacte de cette constante a été introduit dans les année 1960 par P.C. Baayen, H. Davenport et P. Erd\H{o}s.
+
+Si $G=\oplus_{i=1}^{r} C_{n_{i}}$ est la somme directe de groupes cycliques $C_{n_{i}}$, où $n_{i}$ représente l'ordre du groupe cyclique vérifiant $n_{i} \vert n_{i+1}$ et $r$ est le rang du groupe $G$. 
+
+Alors on peut définir $D^{*}(G)$ comme 
+$$D^{*}(G)=1+\sum_{i=1}^{r}(n_{i}-1).$$
+
+ on a les deux inégalités suivantes
+ 
+$$ D^{*}(G)=\sum_{i=1}^{r}(n_{i}-1)+1\leq D(G)\leq n_{r}\left(1+log \frac{|G|}{n_{r}}\right).$$
+
+D'où 
+
+$$\forall n \in \N^{*}, \ D(C_{n})=n $$
+
+Jusqu'à la fin des années 1960, il était connu que  \fbox{$D(G)=D^{*}(G)$} dans certains cas (voir ). Ci dessous un récapitulatif des cas possibles pour avoir cette égalité. 
+\begin{enumerate}
+\item Les $p-$groupes.  
+\item Les groupes de rang au plus 2. 
+\item Pour le groupe $G^{'} \oplus C_{n}$ avec $G^{'}$ est un $p-$groupe et $D(G^{'}) \le 2 \exp(G^{'}) -1$ et $pgcd(n,\exp(G^{'}))=1$.
+\item Les groupes de rang 3 (certains cas). (dans la suite $n \in \N$)
+	\begin{enumerate}
+	\item Pour le groupe $C_{2}^{2} \oplus C_{2n}$. 
+	\item Pour le groupe $C_{3}^{2} \oplus C_{3n}$.
+	\item Pour le groupe $C_{3} \oplus C_{3n}^{2}$ tel que $n$ et $6$ sont premiers entre eux. 
+	\item Pour le groupe $C_{n_{1}} \oplus C_{n_{2}} \oplus C_{n_{3}m}$ avec $n_{1} \vert n_{2} \vert n_{3}$ et $m \in \N$ (sous les conditions suivantes): 
+	
+		\begin{itemize}
+		\item Si  $D(C_{n_{1}} \oplus C_{n_{2}} \oplus C_{n_{3}})=D^{*}(C_{n_{1}} \oplus C_{n_{2}} \oplus C_{n_{3}}) $
+		\item Et si $(n_{1} n_{2}^{2}-2n_{2}-n_{1}-2) \le n_{3} $
+		\end{itemize}
+	\item Pour le groupe $C_{4}^{2} \oplus C_{4n}$. 
+	\item Pour le groupe $C_{6}^{2} \oplus C_{6n}$. 
+	\item Les groupes de la forme $C_{n}^{3}$ (sous conditions)
+		\begin{enumerate}
+		\item Si $n=2 p^{k}$ avec $p$ un nombre premier. 
+		\item Si  $n=32^{k}$.
+		\end{enumerate}
+	\end{enumerate}
+\item Le groupe de rang 4 de la forme $C_{2}^{3} \oplus C_{2n}$
+\item Pour les groupe de rang $5$ sous la forme  $C_{2}^{4} \oplus C_{2k}$ avec $k$ un nombre pair. 
+\end{enumerate}
+
+
+
+Il est aussi connu que \fbox{$D(G)=D^{*}(G)+1$} dans les cas suivants: 
+
+\begin{enumerate}
+\setcounter{enumi}{6}
+\item Pour les groupes sous la forme: $C_{2}^{r-1} \oplus C_{6}$ où $r \in \{5,6,7\}.$
+\item Pour le groupe $C_{3}^{3} \oplus C_{6}$. 
+\end{enumerate}
+
+Pour le cas où \fbox{$D(G)=D^{*}(G)+2$} on connait la valeur de la constante de Davenport pour le groupe: 
+
+\begin{enumerate}
+\setcounter{enumi}{8}
+\item $C_{2}^{7} \oplus C_{6}$
+\end{enumerate}
+
+On sait aussi que la valeur de la constante de Davenport pour les groupe de la forme $C_{2}^{4} \oplus C_{2k}$ avec $k \geq 70$ est %(voir \cite{CS14}): 
+$$
+D(C_{2}^{4} \oplus C_{2k}) = \left\{
+    \begin{array}{ll}
+        2k+4 = D^{*}(C_{2}^{4} \oplus C_{2k})& \mbox{si k est paire} \\
+        2k+5 = D^{*}(C_{2}^{4} \oplus C_{2k})+1& \mbox{si k est impaire}
+    \end{array}
+\right.
+$$
+
+%Il est aussi connu que \fbox{$D(G)=D^{*}(G)+1$} dans les cas suivants: 
+
+%\begin{itemize}
+%\item Pour les groupes sous la forme: $C_{2}^{r-1} \oplus C_{6}$ où $r \in \{5,6,7\}.$
+%\item Pour le groupe $C_{3}^{3} \oplus C_{6}$. 
+%\end{itemize}
+
+%Pour le cas où \fbox{$D(G)=D^{*}(G)+2$} on connait la valeur de la constante de Davenport pour le groupe: 
+
+%\begin{itemize}
+%\item $C_{2}^{7} \oplus C_{6}$
+%\end{itemize}
+
+%On sait aussi que la valeur de la constante de Davenport pour les groupe de la forme $C_{2}^{4} \oplus C_{2k}$ avec $k \geq 70$ est (voir \cite{CS14}): 
+%$$
+%D(C_{2}^{4} \oplus C_{2k}) = \left\{
+  %  \begin{array}{ll}
+    %    2k+4 = D^{*}(C_{2}^{4} \oplus C_{2k})& \mbox{si k est paire} \\
+      %  2k+5 = D^{*}(C_{2}^{4} \oplus C_{2k})+1& \mbox{si k est impaire}
+    %\end{array}
+%\right.
+%$$
+\section{Tableau récapitulatif}\label{umlauts}
+
+%*************************** Je commence mon tableau ici *************************
+ \newlength\epaisLigne 
+ \newcommand\Gline{\noalign{\global\epaisLigne\arrayrulewidth\global
+                              \arrayrulewidth 0.08cm}
+		    \hline\noalign{\global\arrayrulewidth\epaisLigne}} 
+ \newcommand\Mline{\noalign{\global\epaisLigne\arrayrulewidth\global
+                              \arrayrulewidth 0.3}
+		    \hline\noalign{\global\arrayrulewidth\epaisLigne}}
+
+\begin{tabular}{|c||c|c|c|c|c|}
+\Gline  $|G|$ & $D(G)$& Règle(s) appliquée(s) & Le groupe\\
+\Gline  1 & 1 & 2 & $ C_{1}$ \\
+\hline  2 & 2 & 2 & $C_{2}$ \\
+\hline  3 & 3 & 2 & $C_{3}$ \\  
+\hline  4 & 4 & 2 & $C_{4}$ \\ 
+\hline  4 & 3 & 1 ou 2 & $C_{2}^{2}$\\
+\hline  5 & 5 & 2 & $C_{5}$ \\
+\hline  6 & 6 & 2 &  \textcolor{blue}{$C_{2} \oplus C_{3}$ $\simeq C_{6}$} \\
+\hline  7 & 7 & 2 & $C_{7}$ \\
+\hline  8 & 8 & 2 & $C_{8}$  \\
+\hline  8 & 5 & 2 & $ C_{2} \oplus C_{4}$ \\
+\hline  8 & 4 & 1 & ${C_{2}}^{3}$ \\
+\hline  9 & 9 & 2 & $ C_{9}$ \\
+\hline  9 & 5 & 1 et 2& $ C_{3} \oplus C_{3}$\\
+\hline  10 & 10 & 2 & $C_{10}$ \\
+\hline  10 & 10 & 2 & \textcolor{blue}{$C_{2} \oplus C_{5} \simeq C_{10}$} \\
+\hline  11& 10 & 2 & $C_{11}$\\
+%\hline  12  & 12 & 12 & $G \simeq C_{12}$ est cyclique \\
+\hline  12 & 12 & 2 & \textcolor{blue} {$C_{4} \oplus C_{3} \simeq C_{12}$} \\
+\hline  12 & 7 & 2 & \textcolor{blue}{$ C_{3}\oplus C_{2} \oplus C_{2} \simeq C_{6} \oplus C_{2}$}   \\
+\hline  13 & 13 & 2 & $C_{13}$\\
+%\hline  14 & 14 & 14 & $G \simeq C_{14}$ est cyclique\\
+\hline  14 & 14 & 2 & \textcolor{blue}{$C_{7}\oplus C_{2} \simeq C_{14}$} \\
+%\hline  15 & 15 & 15 & $G \simeq C_{15}$ est un groupe cyclique  \\
+\hline  15 & 15 & 2 & \textcolor{blue}{$C_{5}\oplus C_{3} \simeq C_{15}$} \\
+\hline  16  & 16 & 1 ou 2 & $C_{16}=C_{2^{4}}$  \\
+%\hline  16 & 5 & 5 & $G \simeq {C_{2}}^{4}$ ($n$ prime power)\\
+\hline  16 & 9 & 2 & $C_{2} \oplus C_{8} $ \\
+\hline  16  & 7 & 2 & $C_{4}\oplus C_{4}$  \\  
+\hline  16  & 6 & $4-(a)$ & $C_{2} \oplus C_{2} \oplus C_{4}$ \\
+\hline  17  & 17 & 2 & $C_{17}$  \\
+%\hline  18  & 18 & 18 & $G \simeq C_{18}$ est cyclique\\ 
+\hline  18  & 18 & 2 & \textcolor{blue}{$C_{2} \oplus C_{9} \simeq C_{18}$} \\
+%\hline  18  & 8 & 2 & $C_{3}\oplus C_{6}$ \\
+\hline 18 & 8 & 2 & \textcolor {blue}{$G \simeq C_{2}\oplus C_{3}\oplus C_{3} \simeq C_{3}\oplus C_{6}$} \\
+\hline  19  & 19 & 2 & $C_{19}$\\  
+%\hline  20  & 20 & 20 & $G \simeq C_{20}$ est cyclique \\  
+\hline  20  & 20 & 2 & \textcolor{blue}{$C_{4}\oplus C_{5} \simeq C_{20}$}  \\
+%\hline  20  & 11 & 11 & $G \simeq C_{2}\oplus C_{10}$ tel que $r\leq 2$\\
+\hline  20  & 11 & 2 & \textcolor{blue}{$C_{2}\oplus C_{2}\oplus C_{5} \simeq C_{2}\oplus C_{10}$}  \\
+%\hline  21  & 21 & 2 & $C_{21}$\\      
+\hline  21  & 21 & 2 & \textcolor{blue}{$C_{3}\oplus C_{7} \simeq C_{21}$} \\
+%\hline  22  & 22 & 22 & $G \simeq C_{22}$ est cyclique \\             
+\hline  22  & 22 & 2 & \textcolor{blue}{$C_{2}\oplus C_{11} \simeq C_{22}$} \\                               
+\hline  23  & 23 & 2 & $C_{23}$ \\
+%\hline  24  & 24 & 2 & $C_{24}$  \\
+%\hline  24  & 13 & 2 & $G \simeq C_{2}\oplus C_{12}$ tel que $r\leq 2$ \\
+\hline  24  & 13 & 2 & \textcolor{blue}{$C_{2}\oplus C_{3}\oplus C_{4} \simeq C_{2} \oplus C_{12}$}  \\
+\hline  24  & 24 & 2 & \textcolor{blue}{$ C_{3}\oplus C_{8} \simeq C_{24}$}\\
+\hline  24  & 13 & 2 & \textcolor{blue}{$C_{4}\oplus C_{6} \simeq  C_{2} \oplus C_{12}$}\\
+%\hline  24  & & &\textcolor{blue}{$G \simeq C_{3}\oplus C_{2} \oplus C_{2} \oplus C_{2}$}\\
+\hline  24  & 8 & $4-(a)$ & $C_{2}\oplus C_{2} \oplus C_{6}$\\
+\hline  25  & 25 & 2 & $C_{25}$ \\
+\hline  25  & 9 & 1 ou 2 & $C_{5}\oplus C_{5}$ \\
+
+
+\hline 
+
+
+\end{tabular}
+
+\begin{tabular}{|c||c|c|c|c|c|}
+\Gline  $|G|$ & $D(G)$&  Règle(s) appliquée(s) & Le groupe\\
+%\hline  26  & 26 & 26 & $G \simeq C_{26}$ est cyclique \\
+\Gline  26  & 26 & 2 &  \textcolor{blue}{$C_{2}\oplus C_{13} \simeq C_{26}$}\\
+\hline  27  & 27 & 2 & $C_{27}$ \\
+\hline  27  & 7 & 1 & $C_{3} \oplus C_{3} \oplus C_{3} $ \\
+\hline  27  & 11 & 2 & $C_{3} \oplus C_{9}$ \\
+% Il manque ici queleques lignes 
+%\hline  28  & 28 & 28 & $G \simeq C_{28}$ est cyclique\\
+\hline  28  & 15 & 2 & \textcolor{blue}{$C_{2}\oplus C_{2} \oplus C_{7} \simeq C_{2} \oplus C_{14}$} \\
+\hline  28  & 28 & 2 & \textcolor{blue}{$C_{4} \oplus C_{7} \simeq C_{28}$} \\
+%\hline  28  & 15 & 2 & $G\simeq C_{2}\oplus C_{2} \oplus C_{7}$ \textcolor{blue}{$\simeq C_{14}\oplus C_{2}$} \\
+\hline  29  & 29 & 2 & $C_{29}$\\ 
+\hline  30  & 30 & 2 & \textcolor{blue}{$C_{2} \oplus C_{3} \oplus C_{5} \simeq C_{30}$}\\
+%\hline  30  & 30 & 30 & $G \simeq C_{2}\oplus C_{3}\oplus C_{5}$ est isomorphe à $C_{30}$\\
+\hline  30  & 30 & 2 &\textcolor{blue}{$C_{5} \oplus C_{6} \simeq C_{30}$} \\
+\hline  30  & 30 & 2 &\textcolor{blue}{$C_{2} \oplus C_{15} \simeq C_{30}$}\\
+\hline  30  & 30 & 2 &\textcolor{blue}{$C_{3} \oplus C_{10} \simeq C_{30}$} \\
+\hline  31  & 31 & 2 & $C_{31}$ \\
+\hline  32  & 32 & 2 & $C_{32}$ \\
+\hline  32  & 32 & 1 & $C_{{2}^{5}}$\\%  ($n$ prime power)
+\hline  32  & 11 & 2 &$C_{4} \oplus C_{8}$ \\
+\hline  32  & 17 & 2 & $C_{2} \oplus C_{16}$ \\
+\hline  32  &7 & 5 &$ C_{2}\oplus C_{2}\oplus C_{2} \oplus C_{4}$ \\
+\hline  32  & 10 & $4-(a)$& $ C_{2}\oplus C_{2}\oplus C_{8}$\\
+\hline  33  & 33 & 2 & $C_{33}$ \\
+%\Gline  34 & 34 & 2&$C_{34}$  \\
+\hline  34 & 34 & 2 & \textcolor{blue}{$C_{2} \oplus C_{17} \simeq C_{34}$}\\
+%\hline  35 & OUI & 35 & 35 & $G\simeq C_{35}$ est cyclique\\ 
+\hline  35 & 35 & 2 & \textcolor{blue}{$C_{5}\oplus C_{7} \simeq C_{35}$} \\
+%\hline  36 & OUI & 36 & 36 & $G\simeq C_{36}$ est cyclique\\
+%\hline  36 & & & & $G\simeq C_{2}\oplus C_{2}\oplus C_{3}\oplus C_{3}$\\
+\hline  36 & 36 & 2 &\textcolor{blue}{$C_{4} \oplus C_{9} \simeq C_{36}$} \\ 
+\hline  36 & 14 & 2 & $C_{3} \oplus C_{12}$  \\ 
+\hline  36 & 11 & 2 & $C_{6} \oplus C_{6}$  \\ 
+%\hline  36 & & & &$G\simeq C_{6}\oplus C_{2}\oplus C_{3}$ \\
+%\hline  36 & & & &$G\simeq C_{9}\oplus C_{2}\oplus C_{2}$ \\
+%\hline  36 & & & &$G\simeq C_{4}\oplus C_{3}\oplus C_{3}$\\
+\hline  36 & 19 & 2 &$ C_{2} \oplus C_{18}$\\
+\hline  37 & 37 & 2 & $C_{37}$ \\
+%\hline  38 & OUI & 38 & 38 & $G\simeq C_{38}$ est cyclique \\
+\hline  38 & 38 & 2 & \textcolor{blue}{$ C_{2}\oplus C_{19} \simeq C_{38}$} \\
+%\hline  39& OUI & 39 & 39 & $G\simeq C_{39}$ est cyclique\\
+\hline  39& 39 & 2 &\textcolor{blue}{$C_{3}\oplus C_{13} \simeq C_{39}$} \\
+%\hline  40& OUI & 40 & 40 & $G\simeq C_{40}$ est cyclique\\
+%\hline  40& & & & $G\simeq C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{5}$\\
+\hline  40& 40 & 2 & \textcolor{blue}{$C_{5}\oplus C_{8} \simeq C_{40}$} \\
+\hline  40& 21 & 2 & \textcolor{blue}{$ C_{4} \oplus C_{10} \simeq C_{2} \oplus C_{20}$} \\
+%\hline  40& OUI & 21 & 21 & $G\simeq C_{20}\oplus C_{2}$ tel que $r \leq 2$\\
+\hline  40& 21 & 2& \textcolor{blue}{$C_{2}\oplus C_{4}\oplus C_{5} \simeq C_{2} \oplus C_{20}$}\\
+\hline  40&12 &$4-(a)$ & $C_{2}\oplus C_{2}\oplus C_{10}$ \\
+\hline  41& 41 & 2 & $C_{41}$ \\
+%\hline  42& OUI & 42 & 42 & $G\simeq C_{42}$ est cyclique\\
+\hline  42& 42 & 2 & \textcolor{blue}{$C_{2}\oplus C_{3}\oplus C_{7} \simeq C_{42}$} \\
+\hline  42& 42 & 2 & \textcolor{blue}{$C_{2}\oplus C_{21} \simeq C_{42}$} \\
+\hline  42& 42 & 2 & \textcolor{blue}{$C_{3}\oplus C_{14} \simeq C_{42}$} \\
+\hline  42& 42 & 2 & \textcolor{blue}{$C_{6}\oplus C_{7} \simeq C_{42}$} \\
+\hline  43& 43 & 2& $C_{43}$ \\
+\hline  44& 44 & 2 & $C_{44}$ \\
+\hline  44& 23 & 2 & \textcolor{blue}{$C_{2}\oplus C_{2}\oplus C_{11} \simeq C_{2} \oplus C_{22}$} \\
+\hline  44&  44 & 2 & \textcolor{blue}{$C_{4}\oplus C_{11} \simeq C_{44}$} \\
+\hline  44&  23 & 2 & $C_{2} \oplus C_{22}$ \\
+\hline  45&  45 & 2 & $C_{45}$ \\
+\hline  45& 9 & 2 & $ C_{5}\oplus C_{5}$ \\
+%\hline  46&  46 & 46 & $G\simeq C_{46}$ est cyclique \\
+\hline  46&  46 & 2 &\textcolor{blue}{$C_{2}\oplus C_{23} \simeq C_{46}$}  \\
+\hline  47& 47 & 2 & $C_{47}$ \\
+\hline                             
+\end{tabular}
+
+
+\begin{tabular}{|c||c|c|c|c|c|}
+\Gline  $|G|$ & $D(G)$&  Règle(s) appliquée(s) & Le groupe\\
+\hline  48& 48 & 2 &  \textcolor{blue}{$C_{3}\oplus C_{16} \simeq C_{48}$} \\
+\hline  48& 25& 2 & $C_{2} \oplus C_{24}$  \\
+\hline  48&15 & 2 &  \textcolor{blue}{$C_{3} \oplus C_{4}\oplus C_{4} \simeq C_{4} \oplus C_{12}$} \\
+\hline  48& 25 & 2 & \textcolor{blue}{$C_{6}\oplus C_{8} \simeq C_{2} \oplus C_{24}$}\\
+%\hline  48& OUI &15 & 15& $C_{12}\oplus C_{4}$ tel que $r\leq 2$ \\
+\hline  48& &  &$G\simeq C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{3} $\\
+\hline  48& &  &$G\simeq C_{2}\oplus C_{2}\oplus C_{3}\oplus C_{4}$ \\
+\hline  48& 9 & 5 &$G\simeq C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{6}$ \\
+%\hline  48& &  &$G\simeq C_{8}\oplus C_{2}\oplus C_{3}$\\
+\hline  48&14 & $4-(a)$  &$G\simeq C_{2}\oplus C_{2}\oplus C_{12}$\\
+%\hline  48& &  &$G\simeq C_{6}\oplus C_{2}\oplus C_{4}$\\
+\hline  49&  49 & 2 &$ C_{49}$ \\
+\hline  49& 13 & 1 ou 2 & $C_{7}\oplus C_{7}$ \\
+\hline  50& 50 & 2 &$C_{50}$ \\
+%\hline  50&  & &$G\simeq C_{2}\oplus C_{5}\oplus C_{5}$\\
+\hline  50& 14 & &$G\simeq C_{5}\oplus C_{10}$\\
+%\hline  50&  & &$G\simeq C_{25}\oplus C_{2}$\\ 
+\hline  51 & 51 & 2 & $ C_{51}$ \\
+\hline  52 & 52 & 2 & $ C_{52}$  \\
+\hline  52 & 27 & 2 & $C_{2}\oplus C_{26}$ \\
+%\hline  52& & & $G\simeq C_{2}\oplus C_{2}\oplus C_{13}$  \\
+%\hline  52 & 52 & 52 & $G\simeq C_{4}\oplus C_{13}$ est isomorphe à $C_{4}\oplus C_{13}$\\
+\hline  53& 53 & 2 & $ C_{53}$  \\
+%\hline  54&  54 & 54 & $G\simeq C_{54}$ est cyclique\\
+\hline  54&  54 & 2 & \textcolor{blue}{ $C_{2}\oplus C_{27} \simeq C_{54}$} \\ 
+\hline  54&  20 & 2 &  \textcolor{blue}{$ C_{6}\oplus C_{9} \simeq C_{3} \oplus C_{18}$} \\
+%\hline  54&  20 & 20 & $G\simeq C_{18}\oplus C_{3}$ tel que $r\leq 2$\\ 
+%\hline  54& &  & $G\simeq C_{2}\oplus C_{3}\oplus C_{3}\oplus C_{3} $\\
+\hline  54& 10& $4-(b)$ &$ C_{3}\oplus C_{3}\oplus C_{6} $\\
+%\hline  54& &  & $G\simeq C_{9}\oplus C_{3}\oplus C_{2}$ \\
+%\hline  55&  55 & 55 & $G\simeq C_{55}$ est cyclique \\            
+\hline  55&  55 & 2 &  \textcolor{blue}{$C_{5}\oplus C_{11} \simeq C_{55}$}\\
+\hline  56& 56 & 2 & $C_{56}$\\
+%\hline  56& &  & $G\simeq C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{7}$\\
+%\hline  56& &  & $G\simeq C_{4}\oplus C_{2}\oplus C_{7}$\\
+\hline  56&16&$4-(a)$& $C_{2}\oplus C_{2}\oplus C_{14}$\\
+%\hline  56& &  & $G\simeq C_{4}\oplus C_{14}$\\   
+%\hline  56& &  & $G\simeq C_{4}\oplus C_{14}$\\   
+\hline  56& 14 &3 & $C_{8}\oplus C_{7}$\\ %D(G^{'}=8)<=15 et (8,7)=1
+\hline  56& 29 & 2 & $C_{2}\oplus C_{28}$\\
+\hline  57&  57 & 2 & $C_{57}$ \\ 
+%\hline  57& &  & $G\simeq C_{19}\oplus C_{3}$\\
+\hline  58&  58 & 2 & $C_{58}$ \\
+%\hline  58& &  & $G\simeq C_{29}\oplus C_{2}$\\ 
+\hline  59&  59 & 2 & $C_{59}$ \\
+
+%\hline 60& 60 & 60 & $G\simeq C_{60}$ \\
+\hline 60& 60 & 2 &  \textcolor{blue}{$ C_{4}\oplus C_{3}\oplus C_{5} \simeq C_{60}$} \\ 
+%\hline 60& &  &$G\simeq C_{2}\oplus C_{2}\oplus C_{3}\oplus C_{5}$ \\
+%\hline 60& &  &$G\simeq C_{15}\oplus C_{2}\oplus C_{2}$ \\
+%\hline 60& &  &$G\simeq C_{10}\oplus C_{2}\oplus C_{3}$\\
+%\hline 60& &  &$G\simeq C_{6}\oplus C_{2}\oplus C_{5}$ \\   
+\hline 60&18&3&$C_{4}\oplus C_{15}$\\%D(G')=4 <=7 et (4,15)=1
+%\hline 60& &  &$G\simeq C_{12}\oplus C_{5}$ \\
+\hline 60&31&2&$C_{30}\oplus C_{2}$\\
+%\hline 60& &  &$G\simeq C_{20}\oplus C_{3}$\\
+%\hline 60& &  &$G\simeq C_{6}\oplus C_{10}$\\  
+\hline 61& 61& 2 &$C_{61}$\\
+%\hline 62& &  &$G\simeq C_{2} \oplus C_{31}$\\
+\hline 63& 63& 2 &$C_{63}$ \\ 
+%\hline 63& &  &$G\simeq C_{7}\oplus C_{3}\oplus C_{3}$ \\
+\hline 63& 15&3 &$C_{7}\oplus C_{9}$ \\ %D(G')=9 
+\hline 63& 23 & 2 &$C_{3}\oplus C_{21}$ \\
+\hline 64& 64 & 2 &$C_{64}$ \\
+\hline 64& &  &$C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{2}$\\
+\hline 64& 8& 6 &$C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{4} $\\
+\hline 64& 11 &5 &$C_{2}\oplus C_{2}\oplus C_{2}\oplus C_{8}$\\
+\hline 64& 18 &$4-(a)$ &$C_{2}\oplus C_{2}\oplus C_{16}$\\
+\hline 64& &  &$ C_{2}\oplus C_{2}\oplus C_{4}\oplus C_{4}$\\
+\hline 64&19& 2 &$C_{4}\oplus C_{16}$\\
+\hline 64& &  &$C_{2} \oplus C_{4}\oplus C_{8}$\\
+\hline 64& 10 & $4-(e)$ &$C_{4}\oplus C_{4}\oplus C_{4}$ \\
+\hline 65& 65& 2 &$ C_{65}$\\
+%\hline 65& &  &$G\simeq C_{5}\oplus C_{13}$\\
+\hline 
+\end{tabular}
+
+%\section {La constante de Harborth}
+
+%Soit $(G,+,0)$ un groupe abélien fini. La constante de Harborth de $G$, notée $\g(G)$, est le plus petit entier $k$ tel que toute suite d'éléments deux à deux distincts de $G$ de longueur $k$, de manière équivalente tout sous-ensemble de $G$ de cardinal au moins $k$, admet une sous-suite de longueur $\exp(G)$ dont la somme soit nulle. 
+
+%L'étude de Harborth est importante du point de vu géométrique où il considérait une généralisation au treillis. 
+
+%$\g(C_{n})=n$ si n impaire n+1 sinon $C_{n}+C_{n}, C_{2}+C_{2n}$ et C_{3}+C_{3p}$. 
+
+
+
+
+
+
+
+\end{document}
+
+
+

@@ -58,6 +58,7 @@ def getConstant(constant, rang, listValues):
     # 3: E
     print(str(constant) + " " + str(rang) + " " + str(listValues))
     if int(constant) == 0:
+
         if int(rang) == 1:
             # listValues.append(input('Enter value : '))
             return davenPort1(listValues)
@@ -66,7 +67,6 @@ def getConstant(constant, rang, listValues):
 
             if int(rang) == 2:
                 return davenPort2(listValues)
-
             elif int(rang) == 3:
                 return davenPort3(listValues)
             elif int(rang) == 4:

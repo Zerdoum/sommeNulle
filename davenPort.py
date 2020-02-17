@@ -25,13 +25,18 @@ def davenPort3(listValues):
             return compute_constant(listValues)
         elif (x * (y**2)-(2*y)-x-2) <= z:
             return compute_constant(listValues)
-
+        elif ((bltin_gcd(x, y) == 1) & (bltin_gcd(y, z) == 1)):
+            values = []
+            prod = x * y * z
+            values.append(prod)
+            return davenPort1(values)
         else:
             return "The values does not satisfy the conditions"
     elif (x == y == z):
         list = decompose_number(x)
         if all(val == list[0] for val in list):
             return compute_constant(listValues)
+
         #if all(val == list[0] for val in list) & (int(list[0]) == 2) & (len(list)%5 == 0):
         #    return compute_constant(lisValues)
 
@@ -144,4 +149,8 @@ def isValidElement(x, y):
         return True
     else:
         return False
+
+# def isPrime(listValues):
+#     for i in len(listValues):
+
 

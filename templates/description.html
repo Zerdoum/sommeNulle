@@ -1,0 +1,25 @@
+{% extends  "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="post" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Definition</legend>
+                    <article class="media content-section">
+                        <div class="media-body">
+                            <div class="article-metadata" >
+                                  {% if type == 'DavenPort' %}
+                                        {% include './Descriptions/DavenPort.html' %}
+                                  {% endif %}
+                                  {% if type == 'autre' %}
+                                        {% include './Descriptions/autre.html' %}
+                                  {% endif %}
+
+                        </div>
+                    </div>
+                </article>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
+

@@ -1,0 +1,4 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocsection{0.1}{\csname a:TocLink\endcsname{1}{x1-10000.1}{QQ2-1-1}{La constante de Davenport}}{1}\relax 
+\doTocEntry\tocsection{0.2}{\csname a:TocLink\endcsname{1}{x1-20000.2}{QQ2-1-2}{Tableau r\IeC {\'e}capitulatif}}{4}\relax 
+\par 

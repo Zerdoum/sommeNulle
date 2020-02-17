@@ -1,0 +1,2342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html xml:lang="fr" > 
+<head><title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)">
+<!-- html --> 
+<meta name="src" content="etatdelart.tex"> 
+<link rel="stylesheet" type="text/css" href="etatdelart.css"> 
+</head><body 
+>
+   <h3 class="sectionHead"><span class="titlemark">0.1   </span> <a 
+ id="x1-10000.1"></a>La constante de Davenport</h3>
+<!--l. 62--><p class="noindent" >Soit <span 
+class="lmmi-12">G </span>un groupe abélien fini noté additivement. La constante de Davenport notée <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">) </span>est définie
+comme le plus petit entier <span 
+class="lmmi-12">t </span>tel que toutes suites <span 
+class="lmmi-12">S </span>de <span 
+class="lmmi-12">G </span>de longueur supérieur ou égale à <span 
+class="lmmi-12">t </span>contienne une
+sous-suite de somme nulle.
+<!--l. 64--><p class="indent" >   Le problème de déterminer la valeur exacte de cette constante a été introduit dans les année 1960 par
+P.C. Baayen, H. Davenport et P. Erd&#x0151;s.
+<!--l. 66--><p class="indent" >   Si <span 
+class="lmmi-12">G </span><span 
+class="rm-lmr-12">= </span><span 
+class="lmsy-10x-x-120">&#x2295;</span><sub><span 
+class="lmmi-9">i</span><span 
+class="rm-lmr-9">=1</span></sub><sup><span 
+class="lmmi-9">r</span></sup><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="lmmi-7">i</span></sub></sub> est la somme directe de groupes cycliques <span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="lmmi-7">i</span></sub></sub>, où <span 
+class="lmmi-12">n</span><sub><span 
+class="lmmi-9">i</span></sub> représente l&#8217;ordre du groupe
+cyclique vérifiant <span 
+class="lmmi-12">n</span><sub><span 
+class="lmmi-9">i</span></sub><span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">n</span><sub><span 
+class="lmmi-9">i</span><span 
+class="rm-lmr-9">+1</span></sub> et <span 
+class="lmmi-12">r </span>est le rang du groupe <span 
+class="lmmi-12">G</span>.
+<!--l. 68--><p class="indent" >   Alors on peut définir <span 
+class="lmmi-12">D</span><sup><span 
+class="lmsy9-">*</span></sup><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">) </span>comme
+   <center class="math-display" >
+<img src="/static/DavenPort/etatdelart0x.png" alt="test" class="math-display" ></center>
+<!--l. 71--><p class="indent" >   on a les deux inégalités suivantes
+<!--l. 73--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="/static/DavenPort/etatdelart1x.png" alt="         &#x2211;r                         (       |G |)
+D *(G) =    (ni- 1)+  1 &#x2264; D (G ) &#x2264; nr 1+ log---- .
+         i=1                                 nr
+" class="math-display" ></center>
+<!--l. 75--><p class="indent" >   D&#8217;où
+<!--l. 77--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="/static/DavenPort/etatdelart2x.png" alt="&#x2200;n &#x2208; &#x2115; *, D (Cn ) = n
+" class="math-display" ></center>
+<!--l. 79--><p class="indent" >   Jusqu&#8217;à la fin des années 1960, il était connu que <span class="fbox"><span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">) = </span><span 
+class="lmmi-12">D</span><sup><span 
+class="lmsy9-">*</span></sup><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)</span></span> dans certains cas (voir ). Ci dessous
+un récapitulatif des cas possibles pour avoir cette égalité.
+                                                                                            
+                                                                                            
+      <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   1. </dt><dd 
+class="enumerate-enumitem">Les <span 
+class="lmmi-12">p</span><span 
+class="lmsy-10x-x-120">-</span>groupes.
+      </dd><dt class="enumerate-enumitem">
+   2. </dt><dd 
+class="enumerate-enumitem">Les groupes de rang au plus 2.
+      </dd><dt class="enumerate-enumitem">
+   3. </dt><dd 
+class="enumerate-enumitem">Pour  le  groupe  <span 
+class="lmmi-12">G</span><sup><span 
+class="lmsy9-">&#x2032;</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span></sub>  avec  <span 
+class="lmmi-12">G</span><sup><span 
+class="lmsy9-">&#x2032;</span></sup>  est  un  <span 
+class="lmmi-12">p</span><span 
+class="lmsy-10x-x-120">-</span>groupe  et  <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><sup><span 
+class="lmsy9-">&#x2032;</span></sup><span 
+class="rm-lmr-12">) </span><span 
+class="lmsy-10x-x-120">&#x2264; </span><span 
+class="rm-lmr-12">2</span><span 
+class="rm-lmr-12">exp</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><sup><span 
+class="lmsy9-">&#x2032;</span></sup><span 
+class="rm-lmr-12">) </span><span 
+class="lmsy-10x-x-120">- </span><span 
+class="rm-lmr-12">1  </span>et
+      <span 
+class="lmmi-12">pgcd</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">n,</span><span 
+class="rm-lmr-12">exp</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><sup><span 
+class="lmsy9-">&#x2032;</span></sup><span 
+class="rm-lmr-12">)) = 1</span>.
+      </dd><dt class="enumerate-enumitem">
+   4. </dt><dd 
+class="enumerate-enumitem">Les groupes de rang 3 (certains cas). (dans la suite <span 
+class="lmmi-12">n </span><span 
+class="lmsy-10x-x-120">&#x2208; </span><span 
+class="msbm-10x-x-120">&#x2115;</span>)
+           <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+       (a) </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><span 
+class="lmmi-9">n</span></sub>.
+           </dd><dt class="enumerate-enumitem">
+       (b) </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span><span 
+class="lmmi-9">n</span></sub>.
+           </dd><dt class="enumerate-enumitem">
+       (c) </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span><span 
+class="lmmi-9">n</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> tel que <span 
+class="lmmi-12">n </span>et <span 
+class="rm-lmr-12">6 </span>sont premiers entre eux.
+           </dd><dt class="enumerate-enumitem">
+       (d) </dt><dd 
+class="enumerate-enumitem">Pour  le  groupe  <span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">1</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">2</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">3</span></sub><span 
+class="lmmi-9">m</span></sub>  avec  <span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">1</span></sub><span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">2</span></sub><span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">3</span></sub>  et  <span 
+class="lmmi-12">m </span><span 
+class="lmsy-10x-x-120">&#x2208; </span><span 
+class="msbm-10x-x-120">&#x2115;  </span>(sous  les  conditions
+           suivantes)<span class="frenchb-nbsp">&#x00A0;</span>:
+               <ul class="itemize1">
+               <li class="itemize">Si <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">1</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">2</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">3</span></sub></sub><span 
+class="rm-lmr-12">) = </span><span 
+class="lmmi-12">D</span><sup><span 
+class="lmsy9-">*</span></sup><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">1</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">2</span></sub></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span><sub><span 
+class="rm-lmr-7">3</span></sub></sub><span 
+class="rm-lmr-12">)</span>
+               </li>
+               <li class="itemize">Et si <span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">1</span></sub><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> <span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">2</span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">-</span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">1</span></sub> <span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">2) </span><span 
+class="lmsy-10x-x-120">&#x2264; </span><span 
+class="lmmi-12">n</span><sub><span 
+class="rm-lmr-9">3</span></sub></li></ul>
+           </dd><dt class="enumerate-enumitem">
+       (e) </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span><span 
+class="lmmi-9">n</span></sub>.
+           </dd><dt class="enumerate-enumitem">
+       (f) </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span><span 
+class="lmmi-9">n</span></sub>.
+           </dd><dt class="enumerate-enumitem">
+       (g) </dt><dd 
+class="enumerate-enumitem">Les groupes de la forme <span 
+class="lmmi-12">C</span><sub><span 
+class="lmmi-9">n</span></sub><sup><span 
+class="rm-lmr-9">3</span></sup> (sous conditions)
+               <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+            <span class="roman-numeral">i</span>. </dt><dd 
+class="enumerate-enumitem">Si <span 
+class="lmmi-12">n </span><span 
+class="rm-lmr-12">= 2</span><span 
+class="lmmi-12">p</span><sup><span 
+class="lmmi-9">k</span></sup> avec <span 
+class="lmmi-12">p </span>un nombre premier.
+               </dd><dt class="enumerate-enumitem">
+            <span class="roman-numeral">ii</span>. </dt><dd 
+class="enumerate-enumitem">Si <span 
+class="lmmi-12">n </span><span 
+class="rm-lmr-12">= 32</span><sup><span 
+class="lmmi-9">k</span></sup>.</dd></dl>
+           </dd></dl>
+      </dd><dt class="enumerate-enumitem">
+   5. </dt><dd 
+class="enumerate-enumitem">Le groupe de rang 4 de la forme <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">3</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><span 
+class="lmmi-9">n</span></sub>
+      </dd><dt class="enumerate-enumitem">
+   6. </dt><dd 
+class="enumerate-enumitem">Pour les groupe de rang <span 
+class="rm-lmr-12">5 </span>sous la forme <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">4</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><span 
+class="lmmi-9">k</span></sub> avec <span 
+class="lmmi-12">k </span>un nombre pair.</dd></dl>
+<!--l. 109--><p class="indent" >   Il est aussi connu que <span class="fbox"><span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">) = </span><span 
+class="lmmi-12">D</span><sup><span 
+class="lmsy9-">*</span></sup><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)+1</span></span> dans les cas suivants<span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 112--><p class="indent" >
+      <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   7. </dt><dd 
+class="enumerate-enumitem">Pour les groupes sous la forme<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="lmmi-9">r</span><span 
+class="lmsy9-">-</span><span 
+class="rm-lmr-9">1</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> où <span 
+class="lmmi-12">r </span><span 
+class="lmsy-10x-x-120">&#x2208;{</span><span 
+class="rm-lmr-12">5</span><span 
+class="lmmi-12">,</span><span 
+class="rm-lmr-12">6</span><span 
+class="lmmi-12">,</span><span 
+class="rm-lmr-12">7</span><span 
+class="lmsy-10x-x-120">}</span><span 
+class="lmmi-12">.</span>
+      </dd><dt class="enumerate-enumitem">
+   8. </dt><dd 
+class="enumerate-enumitem">Pour le groupe <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub><sup><span 
+class="rm-lmr-9">3</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub>.</dd></dl>
+                                                                                            
+                                                                                            
+<!--l. 117--><p class="indent" >   Pour le cas où <span class="fbox"><span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">) = </span><span 
+class="lmmi-12">D</span><sup><span 
+class="lmsy9-">*</span></sup><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)+2</span></span> on connait la valeur de la constante de Davenport pour le
+groupe<span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 120--><p class="indent" >
+      <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
+   9. </dt><dd 
+class="enumerate-enumitem"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">7</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub></dd></dl>
+<!--l. 124--><p class="indent" >   On sait aussi que la valeur de la constante de Davenport pour les groupe de la forme <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">4</span></sup> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><span 
+class="lmmi-9">k</span></sub> avec
+<span 
+class="lmmi-12">k </span><span 
+class="lmsy-10x-x-120">&#x2265; </span><span 
+class="rm-lmr-12">70 </span>est
+   <center class="math-display" >
+<img 
+src="/static/DavenPort/etatdelart3x.png" alt="               { 2k + 4 = D *(C4 &#x2295; C  )      si k est paire
+D (C42 &#x2295; C2k) =              *  24    2k
+                 2k + 5 = D  (C2 &#x2295; C2k) + 1  si k est impaire
+" class="math-display" ></center>
+<!--l. 156--><p class="noindent" >
+                                                                                            
+                                                                                            
+   <h3 class="sectionHead"><span class="titlemark">0.2   </span> <a 
+ id="x1-20000.2"></a>Tableau récapitulatif</h3>
+   <div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><colgroup id="TBL-1-2g"><col 
+id="TBL-1-2"></colgroup><colgroup id="TBL-1-3g"><col 
+id="TBL-1-3"></colgroup><colgroup id="TBL-1-4g"><col 
+id="TBL-1-4"></colgroup><colgroup id="TBL-1-5g"><col 
+id="TBL-1-5"></colgroup><colgroup id="TBL-1-6g"><col 
+id="TBL-1-6"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-01-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-01-1-1"  
+class="td11">                                                                          </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-01-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-01-2-1"  
+class="td11"> </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-01-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-01-3-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-001-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-001-3-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-001-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-001-4-1"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-001-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-001-5-1"  
+class="td11">                                        <span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">G</span><span 
+class="lmsy-10x-x-120">|                                   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-001-5-2"  
+class="td11"> <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-001-5-3"  
+class="td11"> Règle(s) appliquée(s)  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-001-5-4"  
+class="td11">         Le groupe              </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-001-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-001-6-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0001-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0001-6-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0001-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0001-7-1"  
+class="td11"> </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0001-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0001-8-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-8-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-9-1"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-10-1"  
+class="td11">                                        1                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-10-2"  
+class="td11">   1    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-10-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-10-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">1</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-11-1"  
+class="td11">                                        2                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-11-2"  
+class="td11">   2    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-11-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-11-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-12-1"  
+class="td11">                                        3                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-12-2"  
+class="td11">   3    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-12-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-12-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-13-1"  
+class="td11">                                        4                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-13-2"  
+class="td11">   4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-13-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-13-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-14-1"  
+class="td11">                                        4                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-14-2"  
+class="td11">   3    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-14-3"  
+class="td11">       1 ou 2           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-14-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">2</span></sup>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-15-1"  
+class="td11">                                        5                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-15-2"  
+class="td11">   5    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-15-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-15-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-16-1"  
+class="td11">                                        6                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-16-2"  
+class="td11">   6    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-16-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-16-4"  
+class="td11">       <span id="textcolor1"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-17-1"  
+class="td11">                                        7                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-17-2"  
+class="td11">   7    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-17-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-17-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-18-1"  
+class="td11">                                        8                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-18-2"  
+class="td11">   8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-18-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-18-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-19-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-19-1"  
+class="td11">                                        8                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-19-2"  
+class="td11">   5    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-19-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-19-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-20-1"  
+class="td11">                                        8                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-20-2"  
+class="td11">   4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-20-3"  
+class="td11">         1              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-20-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub><sup><span 
+class="rm-lmr-9">3</span></sup>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-21-1"  
+class="td11">                                        9                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-21-2"  
+class="td11">   9    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-21-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-21-4"  
+class="td11">            <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-22-1"  
+class="td11">                                        9                                                                </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-22-2"  
+class="td11">   5    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-22-3"  
+class="td11">       1 et 2           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-22-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-23-1"  
+class="td11">                                        10                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-23-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-23-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-23-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-24-1"  
+class="td11">                                        10                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-24-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-24-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-24-4"  
+class="td11">       <span id="textcolor2"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-25-1"  
+class="td11">                                        11                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-25-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-25-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-25-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">11</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-26-1"  
+class="td11">                                        12                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-26-2"  
+class="td11">  12    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-26-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-26-4"  
+class="td11">       <span id="textcolor3"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-27-1"  
+class="td11">                                        12                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-27-2"  
+class="td11">   7    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-27-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-27-4"  
+class="td11">   <span id="textcolor4"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub></span>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-28-1"  
+class="td11">                                        13                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-28-2"  
+class="td11">  13    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-28-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-28-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">13</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-29-1"  
+class="td11">                                        14                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-29-2"  
+class="td11">  14    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-29-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-29-4"  
+class="td11">       <span id="textcolor5"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">14</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-30-1"  
+class="td11">                                        15                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-30-2"  
+class="td11">  15    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-30-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-30-4"  
+class="td11">       <span id="textcolor6"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">15</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-31-1"  
+class="td11">                                        16                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-31-2"  
+class="td11">  16    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-31-3"  
+class="td11">       1 ou 2           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-31-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">16</span></sub> <span 
+class="rm-lmr-12">= </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><sup><span 
+class="rm-lmr-7">4</span></sup></sub>                    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-32-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-32-1"  
+class="td11">                                        16                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-32-2"  
+class="td11">   9    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-32-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-32-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-33-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-33-1"  
+class="td11">                                        16                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-33-2"  
+class="td11">   7    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-33-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-33-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-34-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-34-1"  
+class="td11">                                        16                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-34-2"  
+class="td11">   6    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-34-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-34-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-35-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-35-1"  
+class="td11">                                        17                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-35-2"  
+class="td11">  17    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-35-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-35-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">17</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-36-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-36-1"  
+class="td11">                                        18                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-36-2"  
+class="td11">  18    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-36-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-36-4"  
+class="td11">       <span id="textcolor7"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">18</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-37-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-37-1"  
+class="td11">                                        18                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-37-2"  
+class="td11">   8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-37-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-37-4"  
+class="td11"> <span id="textcolor8"><span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub></span>  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-38-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-38-1"  
+class="td11">                                        19                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-38-2"  
+class="td11">  19    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-38-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-38-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">19</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-39-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-39-1"  
+class="td11">                                        20                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-39-2"  
+class="td11">  20    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-39-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-39-4"  
+class="td11">       <span id="textcolor9"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">20</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-40-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-40-1"  
+class="td11">                                        20                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-40-2"  
+class="td11">  11    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-40-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-40-4"  
+class="td11">   <span id="textcolor10"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub></span>     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-41-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-41-1"  
+class="td11">                                        21                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-41-2"  
+class="td11">  21    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-41-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-41-4"  
+class="td11">       <span id="textcolor11"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">21</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-42-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-42-1"  
+class="td11">                                        22                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-42-2"  
+class="td11">  22    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-42-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-42-4"  
+class="td11">       <span id="textcolor12"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">11</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">22</span></sub></span>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-43-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-43-1"  
+class="td11">                                        23                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-43-2"  
+class="td11">  23    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-43-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-43-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">23</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-44-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-44-1"  
+class="td11">                                        24                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-44-2"  
+class="td11">  13    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-44-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-44-4"  
+class="td11">   <span id="textcolor13"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub></span>     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-45-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-45-1"  
+class="td11">                                        24                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-45-2"  
+class="td11">  24    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-45-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-45-4"  
+class="td11">       <span id="textcolor14"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">24</span></sub></span>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-46-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-46-1"  
+class="td11">                                        24                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-46-2"  
+class="td11">  13    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-46-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-46-4"  
+class="td11">     <span id="textcolor15"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub></span>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-47-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-47-1"  
+class="td11">                                        24                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-47-2"  
+class="td11">   8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-47-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-47-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub>               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-48-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-48-1"  
+class="td11">                                        25                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-48-2"  
+class="td11">  25    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-48-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-48-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">25</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-49-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-49-1"  
+class="td11">                                        25                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-49-2"  
+class="td11">   9    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-49-3"  
+class="td11">       1 ou 2           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-49-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00001-50-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00001-50-1"  
+class="td11">                                                                                  </td> </tr></table>
+</div>
+                                                                                            
+                                                                                            
+   <div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><colgroup id="TBL-2-3g"><col 
+id="TBL-2-3"></colgroup><colgroup id="TBL-2-4g"><col 
+id="TBL-2-4"></colgroup><colgroup id="TBL-2-5g"><col 
+id="TBL-2-5"></colgroup><colgroup id="TBL-2-6g"><col 
+id="TBL-2-6"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-2-1-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-02-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-02-1-1"  
+class="td11">                                                                          </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-02-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-02-2-1"  
+class="td11"> </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-02-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-02-3-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-002-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-002-3-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-002-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-002-4-1"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-002-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-002-5-1"  
+class="td11">                                        <span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">G</span><span 
+class="lmsy-10x-x-120">|                                   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-002-5-2"  
+class="td11"> <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-002-5-3"  
+class="td11"> Règle(s) appliquée(s)  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-002-5-4"  
+class="td11">        Le groupe            </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-002-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-002-6-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0002-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0002-6-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0002-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0002-7-1"  
+class="td11"> </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-0002-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-0002-8-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-8-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-9-1"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-10-1"  
+class="td11">                                        26                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-10-2"  
+class="td11">  26    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-10-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-10-4"  
+class="td11">     <span id="textcolor16"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">13</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">26</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-11-1"  
+class="td11">                                        27                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-11-2"  
+class="td11">  27    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-11-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-11-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">27</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-12-1"  
+class="td11">                                        27                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-12-2"  
+class="td11">   7    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-12-3"  
+class="td11">         1              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-12-4"  
+class="td11">      <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-13-1"  
+class="td11">                                        27                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-13-2"  
+class="td11">  11    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-13-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-13-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub>                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-14-1"  
+class="td11">                                        28                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-14-2"  
+class="td11">  15    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-14-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-14-4"  
+class="td11"> <span id="textcolor17"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">14</span></sub></span>   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-15-1"  
+class="td11">                                        28                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-15-2"  
+class="td11">  28    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-15-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-15-4"  
+class="td11">      <span id="textcolor18"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">28</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-16-1"  
+class="td11">                                        29                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-16-2"  
+class="td11">  29    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-16-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-16-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">29</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-17-1"  
+class="td11">                                        30                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-17-2"  
+class="td11">  30    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-17-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-17-4"  
+class="td11">    <span id="textcolor19"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">30</span></sub></span>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-18-1"  
+class="td11">                                        30                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-18-2"  
+class="td11">  30    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-18-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-18-4"  
+class="td11">      <span id="textcolor20"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">30</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-19-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-19-1"  
+class="td11">                                        30                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-19-2"  
+class="td11">  30    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-19-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-19-4"  
+class="td11">     <span id="textcolor21"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">15</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">30</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-20-1"  
+class="td11">                                        30                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-20-2"  
+class="td11">  30    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-20-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-20-4"  
+class="td11">     <span id="textcolor22"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">30</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-21-1"  
+class="td11">                                        31                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-21-2"  
+class="td11">  31    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-21-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-21-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">31</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-22-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-22-2"  
+class="td11">  32    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-22-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-22-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">32</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-23-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-23-2"  
+class="td11">  32    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-23-3"  
+class="td11">         1              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-23-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span><sup><span 
+class="rm-lmr-7">5</span></sup></sub>                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-24-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-24-2"  
+class="td11">  11    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-24-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-24-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-25-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-25-2"  
+class="td11">  17    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-25-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-25-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">16</span></sub>                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-26-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-26-2"  
+class="td11">   7    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-26-3"  
+class="td11">         5              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-26-4"  
+class="td11">    <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-27-1"  
+class="td11">                                        32                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-27-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-27-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-27-4"  
+class="td11">      <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-28-1"  
+class="td11">                                        33                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-28-2"  
+class="td11">  33    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-28-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-28-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">33</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-29-1"  
+class="td11">                                        34                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-29-2"  
+class="td11">  34    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-29-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-29-4"  
+class="td11">     <span id="textcolor23"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">17</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">34</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-30-1"  
+class="td11">                                        35                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-30-2"  
+class="td11">  35    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-30-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-30-4"  
+class="td11">      <span id="textcolor24"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">35</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-31-1"  
+class="td11">                                        36                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-31-2"  
+class="td11">  36    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-31-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-31-4"  
+class="td11">      <span id="textcolor25"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">36</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-32-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-32-1"  
+class="td11">                                        36                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-32-2"  
+class="td11">  14    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-32-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-32-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub>                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-33-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-33-1"  
+class="td11">                                        36                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-33-2"  
+class="td11">  11    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-33-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-33-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub>                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-34-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-34-1"  
+class="td11">                                        36                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-34-2"  
+class="td11">  19    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-34-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-34-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">18</span></sub>                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-35-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-35-1"  
+class="td11">                                        37                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-35-2"  
+class="td11">  37    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-35-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-35-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">37</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-36-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-36-1"  
+class="td11">                                        38                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-36-2"  
+class="td11">  38    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-36-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-36-4"  
+class="td11">     <span id="textcolor26"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">19</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">38</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-37-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-37-1"  
+class="td11">                                        39                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-37-2"  
+class="td11">  39    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-37-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-37-4"  
+class="td11">     <span id="textcolor27"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">13</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">39</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-38-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-38-1"  
+class="td11">                                        40                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-38-2"  
+class="td11">  40    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-38-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-38-4"  
+class="td11">      <span id="textcolor28"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">40</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-39-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-39-1"  
+class="td11">                                        40                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-39-2"  
+class="td11">  21    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-39-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-39-4"  
+class="td11">   <span id="textcolor29"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">20</span></sub></span>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-40-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-40-1"  
+class="td11">                                        40                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-40-2"  
+class="td11">  21    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-40-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-40-4"  
+class="td11"> <span id="textcolor30"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">20</span></sub></span>   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-41-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-41-1"  
+class="td11">                                        40                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-41-2"  
+class="td11">  12    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-41-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-41-4"  
+class="td11">      <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub>            </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-42-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-42-1"  
+class="td11">                                        41                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-42-2"  
+class="td11">  41    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-42-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-42-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">41</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-43-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-43-1"  
+class="td11">                                        42                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-43-2"  
+class="td11">  42    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-43-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-43-4"  
+class="td11">    <span id="textcolor31"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">42</span></sub></span>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-44-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-44-1"  
+class="td11">                                        42                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-44-2"  
+class="td11">  42    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-44-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-44-4"  
+class="td11">     <span id="textcolor32"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">21</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">42</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-45-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-45-1"  
+class="td11">                                        42                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-45-2"  
+class="td11">  42    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-45-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-45-4"  
+class="td11">     <span id="textcolor33"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">14</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">42</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-46-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-46-1"  
+class="td11">                                        42                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-46-2"  
+class="td11">  42    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-46-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-46-4"  
+class="td11">      <span id="textcolor34"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">42</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-47-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-47-1"  
+class="td11">                                        43                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-47-2"  
+class="td11">  43    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-47-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-47-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">43</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-48-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-48-1"  
+class="td11">                                        44                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-48-2"  
+class="td11">  44    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-48-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-48-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">44</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-49-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-49-1"  
+class="td11">                                        44                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-49-2"  
+class="td11">  23    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-49-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-49-4"  
+class="td11"> <span id="textcolor35"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">11</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">22</span></sub></span>  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-50-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-50-1"  
+class="td11">                                        44                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-50-2"  
+class="td11">  44    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-50-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-50-4"  
+class="td11">     <span id="textcolor36"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">11</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">44</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-51-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-51-1"  
+class="td11">                                        44                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-51-2"  
+class="td11">  23    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-51-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-51-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">22</span></sub>                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-52-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-52-1"  
+class="td11">                                        45                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-52-2"  
+class="td11">  45    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-52-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-52-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">45</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-53-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-53-1"  
+class="td11">                                        45                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-53-2"  
+class="td11">   9    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-53-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-53-4"  
+class="td11">        <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub>                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-54-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-54-1"  
+class="td11">                                        46                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-54-2"  
+class="td11">  46    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-54-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-54-4"  
+class="td11">     <span id="textcolor37"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">23</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">46</span></sub></span>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-55-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-55-1"  
+class="td11">                                        47                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-55-2"  
+class="td11">  47    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-55-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-55-4"  
+class="td11">          <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">47</span></sub>                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-00002-56-"><td  style="white-space:nowrap; text-align:center;" id="TBL-00002-56-1"  
+class="td11">                                                                                  </td> </tr></table>
+</div>
+                                                                                            
+                                                                                            
+   <div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1"></colgroup><colgroup id="TBL-3-2g"><col 
+id="TBL-3-2"></colgroup><colgroup id="TBL-3-3g"><col 
+id="TBL-3-3"></colgroup><colgroup id="TBL-3-4g"><col 
+id="TBL-3-4"></colgroup><colgroup id="TBL-3-5g"><col 
+id="TBL-3-5"></colgroup><colgroup id="TBL-3-6g"><col 
+id="TBL-3-6"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-03-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-03-1-1"  
+class="td11">                                                                          </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-03-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-03-2-1"  
+class="td11"> </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-03-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-03-3-1"  
+class="td11">    </td></tr><tr><td colspan="6"></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-3-1"  
+class="td11">                                                                           </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-4-1"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-5-1"  
+class="td11">                                        <span 
+class="lmsy-10x-x-120">|</span><span 
+class="lmmi-12">G</span><span 
+class="lmsy-10x-x-120">|                                   </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-5-2"  
+class="td11"> <span 
+class="lmmi-12">D</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">G</span><span 
+class="rm-lmr-12">)  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-5-3"  
+class="td11"> Règle(s) appliquée(s)  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-5-4"  
+class="td11">         Le groupe              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-6-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-6-2"  
+class="td11">  48    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-6-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-6-4"  
+class="td11">      <span id="textcolor38"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">16</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">48</span></sub></span>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-7-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-7-2"  
+class="td11">  25    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-7-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-7-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">24</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-8-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-8-2"  
+class="td11">  15    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-8-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-8-4"  
+class="td11">  <span id="textcolor39"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub></span>     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-9-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-9-2"  
+class="td11">  25    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-9-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-9-4"  
+class="td11">     <span id="textcolor40"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">24</span></sub></span>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-10-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-10-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-10-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-10-4"  
+class="td11"> <span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub>  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-11-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-11-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-11-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-11-4"  
+class="td11">   <span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-12-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-12-2"  
+class="td11">   9    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-12-3"  
+class="td11">         5              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-12-4"  
+class="td11">   <span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-13-1"  
+class="td11">                                        48                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-13-2"  
+class="td11">  14    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-13-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-13-4"  
+class="td11">     <span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">12</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-14-1"  
+class="td11">                                        49                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-14-2"  
+class="td11">  49    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-14-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-14-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">49</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-15-1"  
+class="td11">                                        49                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-15-2"  
+class="td11">  13    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-15-3"  
+class="td11">       1 ou 2           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-15-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-16-1"  
+class="td11">                                        50                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-16-2"  
+class="td11">  50    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-16-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-16-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">50</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-17-1"  
+class="td11">                                        50                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-17-2"  
+class="td11">  14    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-17-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-17-4"  
+class="td11">       <span 
+class="lmmi-12">G </span><span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">10</span></sub>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-18-1"  
+class="td11">                                        51                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-18-2"  
+class="td11">  51    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-18-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-18-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">51</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-19-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-19-1"  
+class="td11">                                        52                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-19-2"  
+class="td11">  52    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-19-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-19-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">52</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-20-1"  
+class="td11">                                        52                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-20-2"  
+class="td11">  27    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-20-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-20-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">26</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-21-1"  
+class="td11">                                        53                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-21-2"  
+class="td11">  53    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-21-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-21-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">53</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-22-1"  
+class="td11">                                        54                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-22-2"  
+class="td11">  54    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-22-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-22-4"  
+class="td11">      <span id="textcolor41"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">27</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">54</span></sub></span>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-23-1"  
+class="td11">                                        54                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-23-2"  
+class="td11">  20    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-23-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-23-4"  
+class="td11">     <span id="textcolor42"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">18</span></sub></span>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-24-1"  
+class="td11">                                        54                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-24-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-24-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">b</span><span 
+class="rm-lmr-12">)           </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-24-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">6</span></sub>               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-25-1"  
+class="td11">                                        55                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-25-2"  
+class="td11">  55    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-25-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-25-4"  
+class="td11">      <span id="textcolor43"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">11</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">55</span></sub></span>             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-26-1"  
+class="td11">                                        56                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-26-2"  
+class="td11">  56    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-26-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-26-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">56</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-27-1"  
+class="td11">                                        56                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-27-2"  
+class="td11">  16    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-27-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-27-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">14</span></sub>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-28-1"  
+class="td11">                                        56                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-28-2"  
+class="td11">  14    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-28-3"  
+class="td11">         3              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-28-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-29-1"  
+class="td11">                                        56                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-29-2"  
+class="td11">  29    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-29-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-29-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">28</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-30-1"  
+class="td11">                                        57                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-30-2"  
+class="td11">  57    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-30-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-30-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">57</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-31-1"  
+class="td11">                                        58                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-31-2"  
+class="td11">  58    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-31-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-31-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">58</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-32-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-32-1"  
+class="td11">                                        59                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-32-2"  
+class="td11">  59    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-32-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-32-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">59</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-33-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-33-1"  
+class="td11">                                        60                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-33-2"  
+class="td11">  60    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-33-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-33-4"  
+class="td11">     <span id="textcolor44"><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">5</span></sub> <span 
+class="lmsy-10x-x-120">&#x2243; </span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">60</span></sub></span>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-34-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-34-1"  
+class="td11">                                        60                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-34-2"  
+class="td11">  18    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-34-3"  
+class="td11">         3              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-34-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">15</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-35-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-35-1"  
+class="td11">                                        60                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-35-2"  
+class="td11">  31    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-35-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-35-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">30</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-36-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-36-1"  
+class="td11">                                        61                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-36-2"  
+class="td11">  61    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-36-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-36-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">61</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-37-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-37-1"  
+class="td11">                                        63                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-37-2"  
+class="td11">  63    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-37-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-37-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">63</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-38-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-38-1"  
+class="td11">                                        63                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-38-2"  
+class="td11">  15    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-38-3"  
+class="td11">         3              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-38-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">7</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">9</span></sub>                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-39-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-39-1"  
+class="td11">                                        63                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-39-2"  
+class="td11">  23    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-39-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-39-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">3</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">21</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-40-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-40-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-40-2"  
+class="td11">  64    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-40-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-40-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">64</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-41-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-41-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-41-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-41-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-41-4"  
+class="td11">   <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-42-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-42-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-42-2"  
+class="td11">   8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-42-3"  
+class="td11">         6              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-42-4"  
+class="td11">   <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-43-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-43-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-43-2"  
+class="td11">  11    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-43-3"  
+class="td11">         5              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-43-4"  
+class="td11">     <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-44-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-44-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-44-2"  
+class="td11">  18    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-44-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">a</span><span 
+class="rm-lmr-12">)          </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-44-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">16</span></sub>              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-45-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-45-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-45-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-45-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-45-4"  
+class="td11">     <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-46-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-46-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-46-2"  
+class="td11">  19    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-46-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-46-4"  
+class="td11">         <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">16</span></sub>                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-47-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-47-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-47-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-47-3"  
+class="td11">                   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-47-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">2</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">8</span></sub>               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-48-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-48-1"  
+class="td11">                                        64                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-48-2"  
+class="td11">  10    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-48-3"  
+class="td11">       <span 
+class="rm-lmr-12">4</span><span 
+class="lmsy-10x-x-120">-</span><span 
+class="rm-lmr-12">(</span><span 
+class="lmmi-12">e</span><span 
+class="rm-lmr-12">)           </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-48-4"  
+class="td11">       <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub> <span 
+class="lmsy-10x-x-120">&#x2295;</span><span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">4</span></sub>               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-49-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-49-1"  
+class="td11">                                        65                                                               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-49-2"  
+class="td11">  65    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-49-3"  
+class="td11">         2              </td><td  style="white-space:nowrap; text-align:center;" id="TBL-003-49-4"  
+class="td11">           <span 
+class="lmmi-12">C</span><sub><span 
+class="rm-lmr-9">65</span></sub>                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-003-50-"><td  style="white-space:nowrap; text-align:center;" id="TBL-003-50-1"  
+class="td11">                                                                                  </td> </tr></table>
+</div>
+    
+</body></html> 
+
+                                                                                            
+
+
