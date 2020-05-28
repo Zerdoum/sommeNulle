@@ -159,7 +159,7 @@ def checkPrime(lst):
     new_lst = pFactors(x)
     print("the value of new_lst:" + str(new_lst))
     if checkEquallist(new_lst):
-        return is_prime(int(lst[0]))
+        return is_prime(int(new_lst[0]))
 
 def pFactors(n):
     """Finds the prime factors of 'n'"""
