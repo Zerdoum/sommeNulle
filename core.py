@@ -65,7 +65,10 @@ def getConstant(constant, rang, listValues):
         else:
             # davenPortValues[str(rang)]['values']
 
-            if int(rang) == 2:
+            if checkPrime(listValues):
+                print('This is a prime number')
+                return compute_constant(listValues)
+            elif int(rang) == 2:
                 return davenPort2(listValues)
             elif int(rang) == 3:
                 return davenPort3(listValues)
@@ -80,6 +83,7 @@ def getConstant(constant, rang, listValues):
             elif int(rang) == 8:
                 return davenPort8(listValues)
             else:
+
                 return "Not yet implemented"
 
     else:

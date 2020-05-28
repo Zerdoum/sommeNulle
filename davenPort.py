@@ -1,5 +1,6 @@
 from math import gcd as bltin_gcd
 
+
 def davenPort1(listValues):
     return listValues[0]
 
@@ -149,6 +150,29 @@ def isValidElement(x, y):
         return True
     else:
         return False
+
+
+def checkPrime(lst):
+    if checkEquallist(lst):
+        return is_prime(int(lst[0]))
+
+def getFactors(n):
+    # Create an empty list for factors
+    factors=[];
+
+    # Loop over all factors
+    for i in range(1, n + 1):
+        if n % i == 0:
+            factors.append(i)
+
+    # Return the list of factors
+    return factors
+
+def checkEquallist(lst):
+   return lst[1:] == lst[:-1]
+
+def is_prime(a):
+    return all(a % i for i in range(2, a))
 
 # def isPrime(listValues):
 #     for i in len(listValues):
