@@ -144,7 +144,6 @@ def checkListIsValid(listValues):
     return True
 
 def isValidElement(x, y):
-    print("arrived here to check")
     if ((y % x == 0) & (y >= x)):
         print("this is values x y:" + str(x) + ' ' + str(y))
         return True
@@ -153,20 +152,27 @@ def isValidElement(x, y):
 
 
 def checkPrime(lst):
-    if checkEquallist(lst):
+    x = 1
+    for i in lst:
+        x = x * int(i)
+    print("the value of x:" + str(x))
+    new_lst = pFactors(x)
+    print("the value of new_lst:" + str(new_lst))
+    if checkEquallist(new_lst):
         return is_prime(int(lst[0]))
 
-def getFactors(n):
-    # Create an empty list for factors
-    factors=[];
-
-    # Loop over all factors
-    for i in range(1, n + 1):
-        if n % i == 0:
-            factors.append(i)
-
-    # Return the list of factors
-    return factors
+def pFactors(n):
+    """Finds the prime factors of 'n'"""
+    from math import sqrt
+    pFact, limit, check, num = [], int(sqrt(n)) + 1, 2, n
+    if n == 1: return [1]
+    for check in range(2, limit):
+        while num % check == 0:
+            pFact.append(check)
+            num /= check
+    if num > 1:
+        pFact.append(num)
+    return pFact
 
 def checkEquallist(lst):
    return lst[1:] == lst[:-1]
