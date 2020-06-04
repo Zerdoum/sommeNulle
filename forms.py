@@ -18,7 +18,7 @@ class LoginForm(FlaskForm):
 
 class SearchForm(FlaskForm):
     #constant = StringField('Constant', validators=[DataRequired()])
-    constant = SelectField('Constant', choices=[('0','DavenPort'),('1','Harborth')], validators=[DataRequired()])
+    constant = SelectField('Constant', choices=[('0','DavenPort'),('1','Harborth'),('2','egz')], validators=[DataRequired()])
     range = IntegerField('Range', validators=[DataRequired()])
     group = StringField('Group', validators=[DataRequired()])
     submit = SubmitField('Calculer')

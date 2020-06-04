@@ -1,5 +1,6 @@
 import math
 from davenPort import *
+from egz import *
 
 listOfConstants = ["davenPort", "harborth", "egz", "E"]
 
@@ -83,12 +84,35 @@ def getConstant(constant, rang, listValues):
             elif int(rang) == 8:
                 return davenPort8(listValues)
             else:
-
                 return "Not yet implemented"
 
-    else:
-        return "Not implemented yet"
+    elif int(constant) == 2:
+        print("EGZ")
 
+        if int(rang) == 1:
+            # listValues.append(input('Enter value : '))
+            return egz1(listValues)
+        else:
+            # davenPortValues[str(rang)]['values']
+
+            #if checkPrime(listValues):
+            #    print('This is a prime number')
+            #    return compute_constant(listValues)
+            if int(rang) == 2:
+                return egz2(listValues)
+            elif int(rang) == 3:
+                return egz3(listValues)
+            elif int(rang) == 4:
+                return egz4(listValues)
+            elif int(rang) == 5:
+                return egz5(listValues)
+            elif int(rang) == 6:
+                return egz6(listValues)
+
+            else:
+                return "Not yet implemented"
+    else:
+        return "Not yet implemented"
 
 def main():
     CONSTANT = 0  # readConstant()
