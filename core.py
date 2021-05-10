@@ -52,15 +52,15 @@ def readConstant():
 #     print(listValues)
 #     return listValues
 
-def getConstant(constant, rang, listValues):
+def getConstant(constant, listValues):
     # 0: davenPort
     # 1: harborth
     # 2: egz
     # 3: E
-    print(str(constant) + " " + str(rang) + " " + str(listValues))
+    print(str(constant) + " " + str(listValues))
     if int(constant) == 0:
 
-        if int(rang) == 1:
+        if len(listValues) == 1:
             # listValues.append(input('Enter value : '))
             return davenPort1(listValues)
         else:
@@ -69,19 +69,19 @@ def getConstant(constant, rang, listValues):
             if checkPrime(listValues):
                 print('This is a prime number')
                 return compute_constant(listValues)
-            elif int(rang) == 2:
+            elif len(listValues)== 2:
                 return davenPort2(listValues)
-            elif int(rang) == 3:
+            elif len(listValues) == 3:
                 return davenPort3(listValues)
-            elif int(rang) == 4:
+            elif len(listValues) == 4:
                 return davenPort4(listValues)
-            elif int(rang) == 5:
+            elif len(listValues) == 5:
                 return davenPort5(listValues)
-            elif int(rang) == 6:
+            elif len(listValues) == 6:
                 return davenPort6(listValues)
-            elif int(rang) == 7:
+            elif len(listValues) == 7:
                 return davenPort7(listValues)
-            elif int(rang) == 8:
+            elif len(listValues) == 8:
                 return davenPort8(listValues)
             else:
                 return "Not yet implemented"
@@ -89,7 +89,7 @@ def getConstant(constant, rang, listValues):
     elif int(constant) == 2:
         print("EGZ")
 
-        if int(rang) == 1:
+        if len(listValues) == 1:
             # listValues.append(input('Enter value : '))
             return egz1(listValues)
         else:
@@ -98,15 +98,15 @@ def getConstant(constant, rang, listValues):
             #if checkPrime(listValues):
             #    print('This is a prime number')
             #    return compute_constant(listValues)
-            if int(rang) == 2:
+            if len(listValues) == 2:
                 return egz2(listValues)
-            elif int(rang) == 3:
+            elif len(listValues) == 3:
                 return egz3(listValues)
-            elif int(rang) == 4:
+            elif len(listValues) == 4:
                 return egz4(listValues)
-            elif int(rang) == 5:
+            elif len(listValues) == 5:
                 return egz5(listValues)
-            elif int(rang) == 6:
+            elif len(listValues) == 6:
                 return egz6(listValues)
 
             else:

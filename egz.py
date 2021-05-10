@@ -20,10 +20,17 @@ def egz3(listValues):
     y = int(listValues[1])
     z = int(listValues[2])
 
+
 def egz4(listValues):
     x = int(listValues[0])
+    r = int(listValues[3])
     decomposer = decompose_number(int(x))
-    if ((checkEquallist(decomposer)) and ( int(decomposer[0]) == 3) and (checkEquallist(listValues))):
+    if ((checkEquallist(decomposer)) and (int(decomposer[0]) == 2)):
+        if (r == 4):
+            return 13
+        if (r == 6):
+            return 17
+    elif ((checkEquallist(decomposer)) and ( int(decomposer[0]) == 3) and (checkEquallist(listValues))):
         return 20 * ((3 ** len(decomposer)) - 1 ) + 1
     else:
         return "the condition is not satisfied for this group EGZ"

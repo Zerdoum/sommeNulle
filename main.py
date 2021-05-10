@@ -61,20 +61,20 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 @app.route("/search", methods=('GET', 'POST'))
-@app.route("/search/<constant>/<range>/<group>", methods=('GET','POST'))
-@app.route("/search/<constant>/<range>/<group>/<result>", methods=('GET','POST'))
+@app.route("/search/<constant>/<group>", methods=('GET','POST'))
+@app.route("/search/<constant>/<group>/<result>", methods=('GET','POST'))
 def search(constant='', range='', group='', result=''):
     form = SearchForm()
     if form.validate_on_submit():
-        return redirect(url_for('searchOne', constant=form.constant.data, range=form.range.data, group=form.group.data))
-    return render_template('search.html', title='Search', form=form, constant=constant, range=range, group=group, result=result)
+        return redirect(url_for('searchOne', constant=form.constant.data, group=form.group.data))
+    return render_template('search.html', title='Search', form=form, constant=constant, group=group, result=result)
 
-@app.route('/searchOne/<constant>/<range>/<group>')
-def searchOne(constant, range, group):
+@app.route('/searchOne/<constant>/<group>')
+def searchOne(constant, group):
     form = SearchOneForm()
     listValues = group.split(",")
-    result = getConstant(constant, range, listValues)
-    return redirect(url_for('search', constant=constant, range=range, group=group, result=result))
+    result = getConstant(constant, listValues)
+    return redirect(url_for('search', constant=constant, group=group, result=result))
 
 @app.route("/description", methods=('GET', 'POST'))
 def description():
