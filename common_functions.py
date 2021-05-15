@@ -24,6 +24,15 @@ def checkListIsValid(listValues):
                 return False
     return True
 
+def checkListEgzMultipowerTwo(listValues):
+    x = listValues[0]
+    y = listValues[1]
+
+    if isPowerOfTwo(int(x)) and isPowerOfTwo(int(y)) and (int(x) <= int(y)) and checkEquallist(listValues[1:]):
+        return True
+    return False
+
+
 def isValidElement(x, y):
     if ((y % x == 0) & (y >= x)):
         print("this is values x y:" + str(x) + ' ' + str(y))
@@ -60,3 +69,10 @@ def checkEquallist(lst):
 
 def is_prime(a):
     return all(a % i for i in range(2, a))
+
+def isPowerOfTwo(n):
+    """Return True if n is a power of two."""
+    if n <= 0:
+        return False
+    else:
+        return n & (n - 1) == 0

@@ -1,6 +1,7 @@
 import math
 from davenPort import *
 from egz import *
+from harbord import *
 
 listOfConstants = ["davenPort", "harborth", "egz", "E"]
 
@@ -59,13 +60,9 @@ def getConstant(constant, listValues):
     # 3: E
     print(str(constant) + " " + str(listValues))
     if int(constant) == 0:
-
         if len(listValues) == 1:
-            # listValues.append(input('Enter value : '))
             return davenPort1(listValues)
         else:
-            # davenPortValues[str(rang)]['values']
-
             if checkPrime(listValues):
                 print('This is a prime number')
                 return compute_constant(listValues)
@@ -86,12 +83,24 @@ def getConstant(constant, listValues):
             else:
                 return "Not yet implemented"
 
+    elif int(constant) == 1:
+        print("Harbord")
+
+        if len(listValues) == 1:
+            return harbord1(listValues)
+        elif len(listValues) == 2:
+            return harbord2(listValues)
+        elif len(listValues) == 3:
+            return harbord3(listValues)
+
     elif int(constant) == 2:
         print("EGZ")
 
         if len(listValues) == 1:
             # listValues.append(input('Enter value : '))
             return egz1(listValues)
+        elif checkListEgzMultipowerTwo(listValues):
+            return 2**len(listValues[1:]) * (int(listValues[0]) + int(listValues[1])-2)+1
         else:
             # davenPortValues[str(rang)]['values']
 
@@ -108,7 +117,6 @@ def getConstant(constant, listValues):
                 return egz5(listValues)
             elif len(listValues) == 6:
                 return egz6(listValues)
-
             else:
                 return "Not yet implemented"
     else:
