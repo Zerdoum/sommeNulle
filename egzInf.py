@@ -1,5 +1,6 @@
 from common_functions import *
 from davenPort import *
+import math
 from math import gcd as bltin_gcd
 
 egzInfExceptions = [[3,3,3]]
@@ -46,7 +47,13 @@ def egzInf(listValues):
     elif k >= int(davenport):
         return davenport
 
+
 def checkEgzInfException(k,egzInfList):
+    if (int(egzInfList[0]) == 2) and (checkEquallist(egzInfList)):
+        r = len(egzInfList)
+        if k in range(math.ceil((2 * r + 2)/3),r + 1):
+            return r + 2
+
     if len(egzInfList) == 3:
         if (k == 3):
             if (int(egzInfList[0]) == 3) and (checkEquallist(egzInfList)):
