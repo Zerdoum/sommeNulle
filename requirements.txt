@@ -1,0 +1,7 @@
+Flask~=1.1.2
+WTForms~=2.3.3
+flash~=1.0.3
+LoginForm~=1.2.0
+Length~=1.0.1
+flask_wtf~=0.14.3
+email_validator~=1.1.2

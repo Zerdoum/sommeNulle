@@ -81,3 +81,6 @@ def description():
     form = SearchForm()
     type = request.args.get('type')
     return render_template('description.html', title='Description', form=form, type=type)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000,debug=True)
