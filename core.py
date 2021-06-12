@@ -25,41 +25,12 @@ def readRange():
     return range
 
 
-def readConstant():
-    constant = ""
-    try:
-        IndexConstant = input('Choose a constant from the list [davenPort:0, harborth:1, egz:2, E:3]: ')
-        if IndexConstant <= len(listOfConstants):
-            print("The constant is : " + listOfConstants[IndexConstant])
-        else:
-            print("You must enter a valid value")
-
-    except ValueError:
-        print("Not a constant")
-    return IndexConstant
-
-
-# def readValues(var):
-#     listValues = []
-#     for i in range(0,var):
-#         # this check will be applied only when we have 2 or more elements in the list
-#         listValues.append(input('Enter value '+ str(i+1) +': '))
-#         if (len(listValues) >= 2):
-#             if not (isValidElement(listValues[i-1], listValues[i])):
-#                 print("Invalid list")
-#                 break
-#             else:
-#                 print("valid element")
-#
-#     print(listValues)
-#     return listValues
-
-def getConstant(constant, listValues):
+def getConstant(constant, listValues, k=0):
     # 0: davenPort
     # 1: harborth
     # 2: egz
     # 3: E
-    print(str(constant) + " " + str(listValues))
+    print(str(constant) + " " + str(listValues) + " " + str(k))
     if int(constant) == 0:
         if len(listValues) == 1:
             return davenPort1(listValues)
@@ -67,7 +38,7 @@ def getConstant(constant, listValues):
             if checkPrime(listValues):
                 print('This is a prime number')
                 return compute_constant(listValues)
-            elif len(listValues)== 2:
+            elif len(listValues) == 2:
                 return davenPort2(listValues)
             elif len(listValues) == 3:
                 return davenPort3(listValues)
@@ -93,6 +64,8 @@ def getConstant(constant, listValues):
             return harbord2(listValues)
         elif len(listValues) == 3:
             return harbord3(listValues)
+        elif len(listValues) == 4:
+            return harbord4(listValues)
 
     elif int(constant) == 2:
         print("EGZ")
@@ -100,7 +73,7 @@ def getConstant(constant, listValues):
         if len(listValues) == 1:
             return egz1(listValues)
         elif checkListEgzMultipowerTwo(listValues):
-            return 2**len(listValues[1:]) * (int(listValues[0]) + int(listValues[1])-2)+1
+            return 2 ** len(listValues[1:]) * (int(listValues[0]) + int(listValues[1]) - 2) + 1
         else:
 
             if len(listValues) == 2:
@@ -115,22 +88,18 @@ def getConstant(constant, listValues):
                 return egz6(listValues)
             else:
                 return "Not yet implemented"
-    elif int(constant) == 3:
+    elif int(constant) == 3 :
         print("egz <= k(G)")
-        return egzInf(listValues)
-
+        return egzInf(listValues, k)
 
 
     else:
         return "Not yet implemented"
 
+
 def main():
     CONSTANT = 0  # readConstant()
     RANGE = readRange()
-
-    # LISTVALUES = readValues(RANGE)
-    # checkCase(RANGE, LISTVALUES)
-    # getValuesFromDictionnary(CONSTANT, RANGE)
 
 
 if (__name__ == '__main__'):

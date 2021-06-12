@@ -32,6 +32,12 @@ def harbord2(listValues):
     elif ((x == 3) and (y == 9)):
         return 13
 
+    elif ((x == 3) and (y == 12)):
+        return 14
+
+    elif ((x == 6) and (y == 6)):
+        return 13
+
     else:
         return "Other cases for harbord are not known for this range"
 
@@ -48,5 +54,19 @@ def harbord3(listValues):
         return int(8 * (x - 1 ) + 1)
     elif ((checkEquallist([x, y, z])) and (x%3 == 0) or (x%5 == 0)):
         return int(9 * (x - 1) + 1)
+    elif (x==2,y==z==4):
+        return 13
+    else:
+        return "Other cases for EGZ are not known for this range"
+
+
+def harbord4(listValues):
+    x = int(listValues[0])
+    y = int(listValues[1])
+    z = int(listValues[2])
+    r = int(listValues[3])
+
+    if (x==y==z==2,r==4):
+        return 9
     else:
         return "Other cases for EGZ are not known for this range"

@@ -1,20 +1,19 @@
 from common_functions import *
 from davenPort import *
+from egz import *
 import math
 from math import gcd as bltin_gcd
 
-egzInfExceptions = [[3,3,3]]
 
-
-def egzInf(listValues):
+def egzInf(listValues,k):
     davenport = 0
-    k = int(listValues[0])
-    egzInfList = listValues[1:]
+    k = int(k)
+    egzInfList = listValues
 
     if len(egzInfList) == 1:
         return davenPort1(egzInfList)
     else:
-        result = checkEgzInfException(k,egzInfList)
+        result = checkEgzInfException(egzInfList,k)
         if result:
             return result
 #        elif checkPrime(egzInfList):
@@ -22,8 +21,7 @@ def egzInf(listValues):
 #            davenport = compute_constant(egzInfList)
 #            print(str(davenport))
         elif len(egzInfList) == 2:
-            print("Entred case two")
-            exception = checkEgzInfRangeTwoException(k, egzInfList)
+            exception = checkEgzInfRangeTwoException(egzInfList,k)
             if exception:
                 return exception
             davenport = davenPort2(egzInfList)
@@ -48,7 +46,23 @@ def egzInf(listValues):
         return davenport
 
 
-def checkEgzInfException(k,egzInfList):
+def checkEgzInfException(egzInfList,k):
+    egzResult = 0
+    if k == egzInfList[-1]:
+        if len(egzInfList) == 2:
+            egzResult = egz2(egzInfList)
+        elif len(egzInfList) == 3:
+            egzResult = egz3(egzInfList)
+        elif len(egzInfList) == 4:
+            egzResult = egz4(egzInfList)
+        elif len(egzInfList) == 5:
+            egzResult = egz5(egzInfList)
+        elif len(egzInfList) == 6:
+            egzResult = egz6(egzInfList)
+        else:
+            return "Not yet implemented"
+        return egzResult - egzInfList[-1] + 1
+
     if (int(egzInfList[0]) == 2) and (checkEquallist(egzInfList)):
         r = len(egzInfList)
         if k in range(math.ceil((2 * r + 2)/3),r + 1):
@@ -70,6 +84,8 @@ def checkEgzInfException(k,egzInfList):
                 return 9
             elif (int(egzInfList[0]) == 2) and (int(egzInfList[1]) == int(egzInfList[-1]) == 4):
                 return 11
+            elif (int(egzInfList[0]) == int(egzInfList[1]) == int(egzInfList[2]) == 2) and (int(egzInfList[-1]) == 4):
+                return 9
         elif (k == 6):
             if (int(egzInfList[0]) == 3) and (checkEquallist(egzInfList)):
                 return 8
@@ -100,7 +116,7 @@ def checkEgzInfException(k,egzInfList):
     return False
 
 
-def checkEgzInfRangeTwoException(k, egzInfList):
+def checkEgzInfRangeTwoException(egzInfList,k):
     davenport = davenPort2(egzInfList)
     diff = davenport - k
     if diff in range(int(egzInfList[0])):
