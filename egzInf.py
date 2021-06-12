@@ -1,6 +1,7 @@
 from common_functions import *
 from davenPort import *
 from egz import *
+from common_functions import *
 import math
 from math import gcd as bltin_gcd
 
@@ -40,16 +41,19 @@ def egzInf(listValues,k):
         else:
             return "This case is unknown !!!"
 
-    if k == int(davenport - 1):
-        return davenport + 1
+    if k == int(davenport) - 1:
+        return int(davenport) + 1
     elif k >= int(davenport):
         return davenport
 
 
 def checkEgzInfException(egzInfList,k):
     egzResult = 0
-    if k == egzInfList[-1]:
-        if len(egzInfList) == 2:
+    print("Entered exception for egzInf!!")
+    if int(k) == int(egzInfList[-1]):
+        if checkListEgzMultipowerTwo(egzInfList):
+            egzResult = 2 ** len(egzInfList[1:]) * (int(egzInfList[0]) + int(egzInfList[1]) - 2) + 1
+        elif len(egzInfList) == 2:
             egzResult = egz2(egzInfList)
         elif len(egzInfList) == 3:
             egzResult = egz3(egzInfList)
@@ -61,7 +65,7 @@ def checkEgzInfException(egzInfList,k):
             egzResult = egz6(egzInfList)
         else:
             return "Not yet implemented"
-        return egzResult - egzInfList[-1] + 1
+        return int(egzResult) - int(egzInfList[-1]) + 1
 
     if (int(egzInfList[0]) == 2) and (checkEquallist(egzInfList)):
         r = len(egzInfList)
