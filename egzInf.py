@@ -17,10 +17,10 @@ def egzInf(listValues,k):
         result = checkEgzInfException(egzInfList,k)
         if result:
             return result
-#        elif checkPrime(egzInfList):
-#            print("check prime")
-#            davenport = compute_constant(egzInfList)
-#            print(str(davenport))
+        elif checkPrime(egzInfList):
+            print("check prime")
+            davenport = compute_constant(egzInfList)
+            print(str(davenport))
         elif len(egzInfList) == 2:
             exception = checkEgzInfRangeTwoException(egzInfList,k)
             if exception:
