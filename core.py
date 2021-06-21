@@ -36,7 +36,6 @@ def getConstant(constant, listValues, k=0):
             return davenPort1(listValues)
         else:
             if checkPrime(listValues):
-                print('This is a prime number')
                 return compute_constant(listValues)
             elif len(listValues) == 2:
                 return davenPort2(listValues)
@@ -52,8 +51,7 @@ def getConstant(constant, listValues, k=0):
                 return davenPort7(listValues)
             elif len(listValues) == 8:
                 return davenPort8(listValues)
-            else:
-                return "Not yet implemented"
+            return errorMessage()
 
     elif int(constant) == 1:
         print("Harbord")
@@ -66,6 +64,7 @@ def getConstant(constant, listValues, k=0):
             return harbord3(listValues)
         elif len(listValues) == 4:
             return harbord4(listValues)
+        return errorMessage()
 
     elif int(constant) == 2:
         print("EGZ")
@@ -86,15 +85,16 @@ def getConstant(constant, listValues, k=0):
                 return egz5(listValues)
             elif len(listValues) == 6:
                 return egz6(listValues)
-            else:
-                return "Not yet implemented"
+        return errorMessage()
+
     elif int(constant) == 3 :
         print("egz <= k(G)")
+        if not k:
+            return errorMessage("Vous devez saisir une valeur pour k !!")
+
         return egzInf(listValues, k)
 
-
-    else:
-        return "Not yet implemented"
+    return errorMessage()
 
 
 def main():

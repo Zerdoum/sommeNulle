@@ -18,7 +18,12 @@
                     {% else %}
                         {{ form.group(class="form-control form-control-lg") }}
                     {% endif %}
-                    <small>Le groupe doit étre sous forme d'un ensemble d'éléments, séparés par des virgules, par exemple pour le grupe C2⊕C2 on ecrit: 2,2</small>
+                    <small>Le groupe doit étre sous forme d'un ensemble d'éléments, séparés par des virgules, par exemple pour le grupe C2⊕C2 on ecrit: 2,2
+                        <br>
+                            Le groupe doit étre saisi dans un ordre croissant exemple: 2,4,6 ...
+                        </br>
+
+                    </small>
                 </div>
                 <div class="form-group">
                     {{ form.k.label(class="form-control-label") }}

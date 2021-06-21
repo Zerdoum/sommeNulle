@@ -12,8 +12,7 @@ def egz2(listValues):
     y = int(listValues[1])
     if (checkListIsValid(listValues)):
         return x * 2 + y * 2 - 3
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()
 
 def egz3(listValues):
     x = int(listValues[0])
@@ -28,8 +27,7 @@ def egz3(listValues):
         return int(8 * (x - 1 ) + 1)
     elif ((checkEquallist([x, y, z])) and (x%3 == 0) or (x%5 == 0)):
         return int(9 * (x - 1) + 1)
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()
 
 def egz4(listValues):
     x = int(listValues[0])
@@ -46,8 +44,7 @@ def egz4(listValues):
             return int(4 * (r / 2) + 5)
     elif ((checkEquallist(decomposer)) and ( int(decomposer[0]) == 3) and (checkEquallist(listValues))):
         return 20 * ((3 ** len(decomposer)) - 1 ) + 1
-    else:
-        return "the condition is not satisfied for this group EGZ"
+    return errorMessage()
 
 
 
@@ -55,15 +52,13 @@ def egz5(listValues):
     x = int(listValues[0])
     if (checkEquallist(listValues)) & (x == 3):
         return 91
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()
 
 def egz6(listValues):
     x = int(listValues[0])
     if (checkEquallist(listValues)) & (x == 3):
         return 255
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()
 
 def compute_constant(listValues):
     result = 1

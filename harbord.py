@@ -38,8 +38,7 @@ def harbord2(listValues):
     elif ((x == 6) and (y == 6)):
         return 13
 
-    else:
-        return "Other cases for harbord are not known for this range"
+    return errorMessage()
 
 def harbord3(listValues):
     x = int(listValues[0])
@@ -56,8 +55,7 @@ def harbord3(listValues):
         return int(9 * (x - 1) + 1)
     elif (x==2,y==z==4):
         return 13
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()
 
 
 def harbord4(listValues):
@@ -68,5 +66,4 @@ def harbord4(listValues):
 
     if (x==y==z==2,r==4):
         return 9
-    else:
-        return "Other cases for EGZ are not known for this range"
+    return errorMessage()

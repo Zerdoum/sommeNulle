@@ -76,3 +76,7 @@ def isPowerOfTwo(n):
         return False
     else:
         return n & (n - 1) == 0
+
+
+def errorMessage(error="La valeur de la constante pour ce groupe n'est pas encore implémentée, ou elle n'est pas encore connue !!"):
+    return error

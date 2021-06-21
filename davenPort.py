@@ -13,10 +13,10 @@ def davenPort2(listValues):
         return compute_constant(listValues)
     elif (bltin_gcd(x,y) == 1):
         return x * y
-    else:
-        return "Other cases for DavenPort are not known for this range"
+    return errorMessage()
 
 def davenPort3(listValues):
+    print('davenPort 3')
     x = int(listValues[0])
     y = int(listValues[1])
     z = int(listValues[2])
@@ -33,8 +33,9 @@ def davenPort3(listValues):
             prod = x * y * z
             values.append(prod)
             return davenPort1(values)
-        else:
-            return "The values does not satisfy the conditions"
+
+        return errorMessage()
+
     elif (x == y == z):
         list = decompose_number(x)
         if all(val == list[0] for val in list):
@@ -43,11 +44,11 @@ def davenPort3(listValues):
         #if all(val == list[0] for val in list) & (int(list[0]) == 2) & (len(list)%5 == 0):
         #    return compute_constant(lisValues)
 
-    else:
-        return "Other casese are not known for this range"
+    return errorMessage()
 
 
 def davenPort4(listValues):
+    print('davenPort 4')
     x = int(listValues[0])
     y = int(listValues[1])
     z = int(listValues[2])
@@ -57,8 +58,8 @@ def davenPort4(listValues):
         return compute_constant(listValues)
     elif (x == y == z == 3) & (r == 6):
         return compute_constant(listValues) + 1
-    else:
-        return "Other casese are not known for this range"
+
+    return errorMessage()
 
 def davenPort5(listValues):
     x = int(listValues[0])
@@ -76,8 +77,8 @@ def davenPort5(listValues):
             return int(2 * (s / 2) + 4)
         else:
             return int(2 * (s / 2) + 5)
-    else:
-        return "Other casese are not known for this range"
+
+    return errorMessage()
 
 
 def davenPort6(listValues):
@@ -90,6 +91,7 @@ def davenPort6(listValues):
 
     if (x == y == z == r == s == 2) & (t == 6):
         return compute_constant(listValues)
+    return errorMessage()
 
 def davenPort7(listValues):
     x = int(listValues[0])
@@ -102,6 +104,7 @@ def davenPort7(listValues):
 
     if (x == y == z == r == s == t == 2) & (u == 6):
         return compute_constant(listValues)
+    return errorMessage()
 
 def davenPort8(listValues):
     x = int(listValues[0])
@@ -115,7 +118,5 @@ def davenPort8(listValues):
 
     if (x == y == z == r == s == t == u == 2) & (v == 6):
         return compute_constant(listValues)
-
-# The below functions are used to compute the constant and check wether the
-# elements in a list are valid
+    return errorMessage()
 

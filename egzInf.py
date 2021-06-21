@@ -38,14 +38,13 @@ def egzInf(listValues,k):
             davenport = davenPort7(egzInfList)
         elif len(egzInfList) == 8:
             davenport = davenPort8(egzInfList)
-        else:
-            return "This case is unknown !!!"
 
-    if k == int(davenport) - 1:
-        return int(davenport) + 1
-    elif k >= int(davenport):
-        return davenport
-
+    if isinstance(davenport, int):
+        if k == int(davenport) - 1:
+            return int(davenport) + 1
+        elif k >= int(davenport):
+            return davenport
+    return errorMessage()
 
 def checkEgzInfException(egzInfList,k):
     egzResult = 0
@@ -63,8 +62,8 @@ def checkEgzInfException(egzInfList,k):
             egzResult = egz5(egzInfList)
         elif len(egzInfList) == 6:
             egzResult = egz6(egzInfList)
-        else:
-            return "Not yet implemented"
+
+    if int(egzResult):
         return int(egzResult) - int(egzInfList[-1]) + 1
 
     if (int(egzInfList[0]) == 2) and (checkEquallist(egzInfList)):
@@ -125,3 +124,4 @@ def checkEgzInfRangeTwoException(egzInfList,k):
     diff = davenport - k
     if diff in range(int(egzInfList[0])):
         return davenport + diff
+    return False
