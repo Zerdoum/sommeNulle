@@ -19,6 +19,8 @@ def harbord2(listValues):
     elif (checkEquallist(listValues)):
         if (x%2 == 0):
             return 2 * x + 1
+        elif (x == 2):
+            return 5
         return 2 * x - 1
 
     elif ((x == 2) and (y%2 == 0)):
