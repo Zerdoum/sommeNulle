@@ -1,5 +1,5 @@
 #Download Python from DockerHub and use it
-FROM python:3.9.2
+FROM python:3.9
 
 #Set the working directory in the Docker container
 WORKDIR /app
@@ -12,7 +12,7 @@ COPY . /app
 #Install the dependencies
 RUN pip install -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 8080
 
 ENTRYPOINT ["python"]
 
